@@ -1,25 +1,22 @@
 @echo off
-:: Parameters
-set "FOLDER_NAME=%~1"
-set "SOLUTION_NAME=%~2"
-set "PROJECT_NAME=%~3"
-
-:: Default values if parameters are not provided
-if "%FOLDER_NAME%"=="" set "FOLDER_NAME=DefaultFolder"
-if "%SOLUTION_NAME%"=="" set "SOLUTION_NAME=DefaultSolution"
-if "%PROJECT_NAME%"=="" set "PROJECT_NAME=DefaultProject"
-
-:: Create the folder and navigate into it
-mkdir "%FOLDER_NAME%"
-cd "%FOLDER_NAME%"
-
-:: Create the solution with the specified name
-dotnet new sln -n "%SOLUTION_NAME%"
+:: Hardcoded Names
+set "FOLDER_NAME=Example - File Export"
+set "SOLUTION_NAME=Strategy"
+set "PROJECT_NAME=Strategy"
 
 :: Create the project with the specified name
 dotnet new console -n "%PROJECT_NAME%"
 
+:: Rename the project folder to the desired folder name
+ren "%PROJECT_NAME%" "%FOLDER_NAME%"
+
+:: Navigate into the renamed folder
+cd "%FOLDER_NAME%"
+
+:: Create the solution inside the same folder
+dotnet new sln -n "%SOLUTION_NAME%"
+
 :: Add the project to the solution
-dotnet sln "%SOLUTION_NAME%.sln" add "%PROJECT_NAME%\%PROJECT_NAME%.csproj"
+dotnet sln "%SOLUTION_NAME%.sln" add "%PROJECT_NAME%.csproj"
 
 echo Solution and project setup completed.
