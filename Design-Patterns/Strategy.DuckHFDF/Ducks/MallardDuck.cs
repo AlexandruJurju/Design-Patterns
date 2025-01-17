@@ -1,8 +1,9 @@
+using Strategy.DuckHFDF.Ducks.Abstractions;
 using Strategy.DuckHFDF.Strategies;
 
 namespace Strategy.DuckHFDF.Ducks;
 
-public class MallardDuck : Abstractions.Duck
+public class MallardDuck : Duck
 
 {
     public MallardDuck()

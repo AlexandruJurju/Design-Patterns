@@ -1,4 +1,4 @@
-﻿namespace State.Template.DT.States;
+﻿namespace State.Template.States;
 
 public interface IState
 {

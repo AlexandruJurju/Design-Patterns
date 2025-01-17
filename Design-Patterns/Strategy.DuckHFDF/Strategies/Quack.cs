@@ -1,12 +1,11 @@
 using Strategy.DuckHFDF.Strategies.Abstractions;
 
-namespace Strategy.DuckHFDF.Strategies
+namespace Strategy.DuckHFDF.Strategies;
+
+public class Quack : IQuackBehavior
 {
-    public class Quack : IQuackBehavior
+    void IQuackBehavior.Quack()
     {
-        void IQuackBehavior.Quack()
-        {
-            Console.WriteLine("Quack");
-        }
+        Console.WriteLine("Quack");
     }
 }

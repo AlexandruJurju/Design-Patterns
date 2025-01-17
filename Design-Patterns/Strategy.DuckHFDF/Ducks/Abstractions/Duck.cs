@@ -7,17 +7,13 @@ public abstract class Duck
     public IFlyBehavior FlyBehavior { get; set; }
     public IQuackBehavior QuackBehavior { get; set; }
 
-    protected Duck()
-    {
-    }
-        
     public abstract void Display();
-        
+
     public void PerformFly()
     {
         FlyBehavior.Fly();
     }
-        
+
     public void PerformQuack()
     {
         QuackBehavior.Quack();

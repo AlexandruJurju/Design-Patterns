@@ -1,6 +1,6 @@
-﻿using State.Template.DT.States;
+﻿using State.Template.States;
 
-namespace State.Template.DT;
+namespace State.Template;
 
 public class Context
 {

@@ -1,12 +1,11 @@
 using Strategy.DuckHFDF.Strategies.Abstractions;
 
-namespace Strategy.DuckHFDF.Strategies
+namespace Strategy.DuckHFDF.Strategies;
+
+public class FlyWithWings : IFlyBehavior
 {
-    public class FlyWithWings : IFlyBehavior
+    public void Fly()
     {
-        public void Fly()
-        {
-            Console.WriteLine("I'm flying!!");
-        }
+        Console.WriteLine("I'm flying!!");
     }
 }

@@ -1,11 +1,11 @@
 ﻿using Strategy.DuckHFDF.Ducks;
 using Strategy.DuckHFDF.Strategies;
 
-MallardDuck mallard = new MallardDuck();
-RubberDuck rubberDuckie = new RubberDuck();
-DecoyDuck decoy = new DecoyDuck();
+var mallard = new MallardDuck();
+var rubberDuckie = new RubberDuck();
+var decoy = new DecoyDuck();
 
-ModelDuck model = new ModelDuck();
+var model = new ModelDuck();
 
 mallard.PerformQuack();
 rubberDuckie.PerformQuack();

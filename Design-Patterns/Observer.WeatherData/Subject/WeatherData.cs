@@ -4,7 +4,7 @@ namespace Observer.WeatherData.Subject;
 
 public class WeatherData : ISubject
 {
-    private List<IObserver> observers = new();
+    private readonly List<IObserver> observers = new();
     public double Temperature { get; set; }
     public double Humidity { get; set; }
     public double Pressure { get; set; }

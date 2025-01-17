@@ -1,11 +1,11 @@
-﻿namespace State.Template.DT.States;
+﻿namespace State.Template.States;
 
-public class ConcreteStateA: IState
+public class ConcreteStateA : IState
 {
     public void Handle(Context context)
     {
         Console.WriteLine("ConcreteStateA handles the request");
-        
+
         context.SetState(new ConcreteStateB());
     }
 }

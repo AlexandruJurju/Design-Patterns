@@ -8,7 +8,7 @@ public class EmailService : IOrderNotifier
         var message = $"Order {order.Id} has been shipped";
         Send(subject, order.CustomerEmail, message);
     }
-    
+
     public void Send(string subject, string orderCustomerEmail, string message)
     {
         Console.WriteLine($"Sending Email message with subject {subject} and body {message} to ${orderCustomerEmail} ");

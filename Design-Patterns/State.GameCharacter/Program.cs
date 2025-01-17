@@ -1,6 +1,6 @@
 ﻿using State.GameCharacter;
 
-Character hero = new Character(); // Normal State
+var hero = new Character(); // Normal State
 
 Console.WriteLine($"Initial health: {hero.Health}");
 
@@ -13,7 +13,7 @@ Console.WriteLine($"After damage: {hero.Health}, has power up: {hero.HasPowerUp}
 hero.TakeDamage(30);
 Console.WriteLine($"After damage: {hero.Health}, has power up: {hero.HasPowerUp}");
 
-for (int i = 0; i < 12; i++)
+for (var i = 0; i < 12; i++)
 {
     hero.Update();
 }

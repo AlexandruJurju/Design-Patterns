@@ -4,12 +4,12 @@ namespace Strategy.OrderNotifier;
 
 public class OrderService
 {
-    public IOrderNotifier _orderNotifier { get; set; }
-
     public OrderService(IOrderNotifier orderNotifier)
     {
         _orderNotifier = orderNotifier;
     }
+
+    public IOrderNotifier _orderNotifier { get; set; }
 
     public void ShipOrder(Order order)
     {

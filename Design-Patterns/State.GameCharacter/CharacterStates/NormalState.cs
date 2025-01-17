@@ -15,7 +15,7 @@ public class NormalState : ICharacterState
     public void HandlePowerUpCollection(Character character)
     {
         character.SetPowerUp(true);
-        
+
         character.SetState(new PowerUpState());
     }
 

@@ -3,7 +3,7 @@
 public class ConcreteSubject : ISubject
 {
     private readonly List<IObserver> _observers = new();
-    public int State { get; set; } = 0;
+    public int State { get; set; }
 
     public void Attach(IObserver observer)
     {

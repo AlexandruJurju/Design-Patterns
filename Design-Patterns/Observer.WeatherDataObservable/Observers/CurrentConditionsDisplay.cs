@@ -4,9 +4,9 @@ namespace Observer.WeatherDataObservable.Observers;
 
 public class CurrentConditionsDisplay : IObserver<WeatherData>, IDisplayElement
 {
-    private double _temperature;
-    private double _humidity;
     private readonly IDisposable _unsubscriber;
+    private double _humidity;
+    private double _temperature;
 
     public CurrentConditionsDisplay(IObservable<WeatherData> weatherData)
     {

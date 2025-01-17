@@ -17,11 +17,11 @@ public class PowerUpState : ICharacterState
     public void HandleUpdate(Character character)
     {
         _powerUpDuration--;
-        
+
         if (_powerUpDuration == 0)
         {
             character.SetPowerUp(false);
-            
+
             character.SetState(new NormalState());
         }
     }

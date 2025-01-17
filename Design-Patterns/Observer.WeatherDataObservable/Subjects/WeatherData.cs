@@ -3,13 +3,22 @@
 public class WeatherData : IObservable<WeatherData>
 {
     private readonly List<IObserver<WeatherData>> _observers;
-    public double Temperature { get; private set; }
-    public double Humidity { get; private set; }
-    public double Pressure { get; private set; }
 
     public WeatherData()
     {
         _observers = new List<IObserver<WeatherData>>();
+    }
+
+    public double Temperature { get; private set; }
+    public double Humidity { get; private set; }
+    public double Pressure { get; private set; }
+
+    public IDisposable Subscribe(IObserver<WeatherData> observer)
+    {
+        if (!_observers.Contains(observer))
+            _observers.Add(observer);
+
+        return new Unsubscriber(_observers, observer);
     }
 
     private void MeasurementsChanged()
@@ -28,18 +37,10 @@ public class WeatherData : IObservable<WeatherData>
         MeasurementsChanged();
     }
 
-    public IDisposable Subscribe(IObserver<WeatherData> observer)
-    {
-        if (!_observers.Contains(observer))
-            _observers.Add(observer);
-
-        return new Unsubscriber(_observers, observer);
-    }
-
     private class Unsubscriber : IDisposable
     {
-        private readonly List<IObserver<WeatherData>> _observers;
         private readonly IObserver<WeatherData> _observer;
+        private readonly List<IObserver<WeatherData>> _observers;
 
         public Unsubscriber(List<IObserver<WeatherData>> observers, IObserver<WeatherData> observer)
         {

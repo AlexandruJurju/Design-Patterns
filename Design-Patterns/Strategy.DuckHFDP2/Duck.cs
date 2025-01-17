@@ -5,8 +5,8 @@ namespace Strategy.DuckHFDP2;
 
 public class Duck
 {
-    private IFlyBehavior _flyBehavior;
-    private IQuackBehavior _quackBehavior;
+    private readonly IFlyBehavior _flyBehavior;
+    private readonly IQuackBehavior _quackBehavior;
 
     public Duck(IFlyBehavior flyBehavior, IQuackBehavior quackBehavior)
     {

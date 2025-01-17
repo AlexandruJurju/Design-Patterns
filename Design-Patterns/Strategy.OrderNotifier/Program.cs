@@ -3,7 +3,7 @@ using Strategy.OrderNotifier.Notifiers;
 
 IOrderNotifier orderNotifier = new SmsService();
 
-Order order = new Order
+var order = new Order
 {
     Id = 1,
     CustomerEmail = "test@test.com",
@@ -11,7 +11,7 @@ Order order = new Order
     Status = OrderStatus.Delayed
 };
 
-OrderService orderService = new OrderService(orderNotifier);
+var orderService = new OrderService(orderNotifier);
 orderService.ShipOrder(order);
 
 orderService._orderNotifier = new EmailService();

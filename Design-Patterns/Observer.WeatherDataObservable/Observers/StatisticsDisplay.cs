@@ -4,12 +4,11 @@ namespace Observer.WeatherDataObservable.Observers;
 
 public class StatisticsDisplay : IObserver<WeatherData>, IDisplayElement
 {
+    private readonly IDisposable _unsubscriber;
     private double _maxTemp;
     private double _minTemp = 200;
-    private double _tempSum;
     private int _numReadings;
-
-    private readonly IDisposable _unsubscriber;
+    private double _tempSum;
 
     public StatisticsDisplay(IObservable<WeatherData> weatherData)
     {
@@ -18,7 +17,7 @@ public class StatisticsDisplay : IObserver<WeatherData>, IDisplayElement
 
     public void Display()
     {
-        Console.WriteLine("Avg/Max/Min temperature = " + (_tempSum / _numReadings) + "/" + _maxTemp + "/" + _minTemp);
+        Console.WriteLine("Avg/Max/Min temperature = " + _tempSum / _numReadings + "/" + _maxTemp + "/" + _minTemp);
     }
 
     public void OnCompleted()
