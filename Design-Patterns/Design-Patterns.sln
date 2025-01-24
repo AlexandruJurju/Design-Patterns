@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton.ThreadSafe", "Sin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton.CSharpLazy", "Singleton.CSharpLazy\Singleton.CSharpLazy.csproj", "{0116AFA3-A78C-4FC0-8C35-6DA98CF73045}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor.DocumentDometrain", "Visitor.DocumentDometrain\Visitor.DocumentDometrain.csproj", "{906EC751-08C2-4110-B1DA-72DFD0238F5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,7 @@ Global
 		{8B953F8D-3835-4D2B-882D-F67833990C19} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
 		{6025BFBB-FDD8-4D13-9EBD-7915A6BBCFBA} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
 		{0116AFA3-A78C-4FC0-8C35-6DA98CF73045} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
+		{906EC751-08C2-4110-B1DA-72DFD0238F5D} = {F77C4F45-FC22-4184-810D-1C278F702012}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A15D55B4-3C0B-4F22-A483-B1981857387D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -119,5 +122,9 @@ Global
 		{0116AFA3-A78C-4FC0-8C35-6DA98CF73045}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0116AFA3-A78C-4FC0-8C35-6DA98CF73045}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0116AFA3-A78C-4FC0-8C35-6DA98CF73045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{906EC751-08C2-4110-B1DA-72DFD0238F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906EC751-08C2-4110-B1DA-72DFD0238F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906EC751-08C2-4110-B1DA-72DFD0238F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906EC751-08C2-4110-B1DA-72DFD0238F5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
