@@ -46,11 +46,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator.Template", "Decor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator.EncryptStream", "Decorator.EncryptStream\Decorator.EncryptStream.csproj", "{E266C8CF-7EA8-4D82-A638-BBBA5A53CFAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.Template", "Factory.Template\Factory.Template.csproj", "{06F76A22-C12D-4DB8-BE4B-0831F2777037}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod.Template", "FactoryMethod.Template\FactoryMethod.Template.csproj", "{06F76A22-C12D-4DB8-BE4B-0831F2777037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.Transportation", "Factory.Transportation\Factory.Transportation.csproj", "{E3EC748F-50A1-45A6-964C-EFB976DA3731}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod.Transportation", "FactoryMethod.Transportation\FactoryMethod.Transportation.csproj", "{E3EC748F-50A1-45A6-964C-EFB976DA3731}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.Pizza", "Factory.Pizza\Factory.Pizza.csproj", "{043D7ADB-EC38-4262-9590-9B64A7A5E7E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod.Pizza", "FactoryMethod.Pizza\FactoryMethod.Pizza.csproj", "{043D7ADB-EC38-4262-9590-9B64A7A5E7E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory.Template", "AbstractFactory.Template\AbstractFactory.Template.csproj", "{1E3CA60B-E600-4A1C-9970-E13014380BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory.Furniture", "AbstractFactory.Furniture\AbstractFactory.Furniture.csproj", "{F5E2145B-3B56-4E13-B007-7184C50BDF30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory.Pizza", "AbstractFactory.Pizza\AbstractFactory.Pizza.csproj", "{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,9 @@ Global
 		{06F76A22-C12D-4DB8-BE4B-0831F2777037} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
 		{E3EC748F-50A1-45A6-964C-EFB976DA3731} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
 		{043D7ADB-EC38-4262-9590-9B64A7A5E7E5} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
+		{1E3CA60B-E600-4A1C-9970-E13014380BD5} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
+		{F5E2145B-3B56-4E13-B007-7184C50BDF30} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
+		{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A15D55B4-3C0B-4F22-A483-B1981857387D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -175,5 +184,17 @@ Global
 		{043D7ADB-EC38-4262-9590-9B64A7A5E7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{043D7ADB-EC38-4262-9590-9B64A7A5E7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{043D7ADB-EC38-4262-9590-9B64A7A5E7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E3CA60B-E600-4A1C-9970-E13014380BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E3CA60B-E600-4A1C-9970-E13014380BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E3CA60B-E600-4A1C-9970-E13014380BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E3CA60B-E600-4A1C-9970-E13014380BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E2145B-3B56-4E13-B007-7184C50BDF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E2145B-3B56-4E13-B007-7184C50BDF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E2145B-3B56-4E13-B007-7184C50BDF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E2145B-3B56-4E13-B007-7184C50BDF30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
