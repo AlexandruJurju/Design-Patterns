@@ -1,6 +1,6 @@
-﻿using Observer.WeatherData.Observers;
+﻿using Observer.Weather.Observers;
 
-namespace Observer.WeatherData.Subject;
+namespace Observer.Weather.Subject;
 
 public class WeatherData : ISubject
 {

@@ -1,6 +1,6 @@
-﻿using Observer.WeatherDataObservable.Subjects;
+﻿using Observer.WeatherWithObservable.Subjects;
 
-namespace Observer.WeatherDataObservable.Observers;
+namespace Observer.WeatherWithObservable.Observers;
 
 public class ForecastDisplay : IObserver<WeatherData>, IDisplayElement
 {

@@ -1,5 +1,5 @@
-﻿using Observer.WeatherData.Observers;
-using Observer.WeatherData.Subject;
+﻿using Observer.Weather.Observers;
+using Observer.Weather.Subject;
 
 var weatherData = new WeatherData();
 var currentDisplay = new CurrentConditionsDisplay(weatherData);

@@ -1,5 +1,5 @@
-﻿using Observer.WeatherDataObservable.Observers;
-using Observer.WeatherDataObservable.Subjects;
+﻿using Observer.WeatherWithObservable.Observers;
+using Observer.WeatherWithObservable.Subjects;
 
 var weatherData = new WeatherData();
 

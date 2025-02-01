@@ -1,4 +1,4 @@
-﻿namespace Observer.WeatherDataObservable.Subjects;
+﻿namespace Observer.WeatherWithObservable.Subjects;
 
 public class WeatherData : IObservable<WeatherData>
 {

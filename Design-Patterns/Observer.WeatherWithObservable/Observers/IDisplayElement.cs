@@ -1,4 +1,4 @@
-﻿namespace Observer.WeatherData.Observers;
+﻿namespace Observer.WeatherWithObservable.Observers;
 
 public interface IDisplayElement
 {

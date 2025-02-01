@@ -4,7 +4,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{A15D55B4-3C0B-4F22-A483-B1981857387D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer.WeatherDataObservable", "Observer.WeatherDataObservable\Observer.WeatherDataObservable.csproj", "{72107CE3-DA35-4C59-97FA-AB89195606E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer.WeatherWithObservable", "Observer.WeatherWithObservable\Observer.WeatherWithObservable.csproj", "{72107CE3-DA35-4C59-97FA-AB89195606E1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{BF5B0393-1F4C-45B9-B53E-132168A80F73}"
 EndProject
@@ -26,7 +26,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template", "Template\Templa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.FileParser.DT", "Template.FileParser.DT\Template.FileParser.DT.csproj", "{9CE6BB7E-6F73-4462-8AB3-D33627DA23DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer.WeatherData", "Observer.WeatherData\Observer.WeatherData.csproj", "{1B9A8D2A-93B8-4C91-8BD6-9A068227C819}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer.Weather", "Observer.Weather\Observer.Weather.csproj", "{1B9A8D2A-93B8-4C91-8BD6-9A068227C819}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{24FEA392-4FD5-4F42-9CDF-BB0F4D84A94B}"
 EndProject
@@ -57,6 +57,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory.Furniture", "AbstractFactory.Furniture\AbstractFactory.Furniture.csproj", "{F5E2145B-3B56-4E13-B007-7184C50BDF30}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory.Pizza", "AbstractFactory.Pizza\AbstractFactory.Pizza.csproj", "{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.csproj", "{B39CFA65-91CC-4DBB-A84A-66408A35B37D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command.Remote", "Command.Remote\Command.Remote.csproj", "{86C21C0D-F7E6-447E-BED9-C3E80CAF83B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -90,6 +94,8 @@ Global
 		{1E3CA60B-E600-4A1C-9970-E13014380BD5} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
 		{F5E2145B-3B56-4E13-B007-7184C50BDF30} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
 		{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
+		{B39CFA65-91CC-4DBB-A84A-66408A35B37D} = {F77C4F45-FC22-4184-810D-1C278F702012}
+		{86C21C0D-F7E6-447E-BED9-C3E80CAF83B5} = {F77C4F45-FC22-4184-810D-1C278F702012}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A15D55B4-3C0B-4F22-A483-B1981857387D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -196,5 +202,13 @@ Global
 		{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D31E4DE0-B7A3-47BB-BEBA-354ADA49BFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B39CFA65-91CC-4DBB-A84A-66408A35B37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B39CFA65-91CC-4DBB-A84A-66408A35B37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B39CFA65-91CC-4DBB-A84A-66408A35B37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B39CFA65-91CC-4DBB-A84A-66408A35B37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C21C0D-F7E6-447E-BED9-C3E80CAF83B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C21C0D-F7E6-447E-BED9-C3E80CAF83B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C21C0D-F7E6-447E-BED9-C3E80CAF83B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C21C0D-F7E6-447E-BED9-C3E80CAF83B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

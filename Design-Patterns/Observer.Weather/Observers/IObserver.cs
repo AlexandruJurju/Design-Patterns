@@ -1,4 +1,4 @@
-﻿namespace Observer.WeatherData.Observers;
+﻿namespace Observer.Weather.Observers;
 
 public interface IObserver
 {

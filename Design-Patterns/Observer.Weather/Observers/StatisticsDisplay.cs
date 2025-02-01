@@ -1,6 +1,6 @@
-﻿using Observer.WeatherData.Subject;
+﻿using Observer.Weather.Subject;
 
-namespace Observer.WeatherData.Observers;
+namespace Observer.Weather.Observers;
 
 public class StatisticsDisplay : IObserver, IDisplayElement
 {
