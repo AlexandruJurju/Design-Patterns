@@ -1,4 +1,4 @@
-﻿namespace Template.Template;
+﻿namespace Template;
 
 public class ConcreteAlgorithmB : Template
 {

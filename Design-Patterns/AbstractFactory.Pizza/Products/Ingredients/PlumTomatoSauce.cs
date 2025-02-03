@@ -1,6 +1,6 @@
 ﻿using AbstractFactory.Pizza.Products.Ingredients.Abstractions;
 
-namespace AbstractFactory.Pizza.Products;
+namespace AbstractFactory.Pizza.Products.Ingredients;
 
 public class PlumTomatoSauce : ISauce
 {

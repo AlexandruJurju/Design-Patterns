@@ -1,6 +1,6 @@
-﻿using Template.Template;
+﻿using Template;
 
-Template.Template.Template instance = new ConcreteAlgorithmA();
+Template.Template instance = new ConcreteAlgorithmA();
 instance.TemplateMethod();
 Console.WriteLine();
 
