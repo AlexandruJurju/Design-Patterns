@@ -98,6 +98,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer.PrintingOfficeEven
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer.PrintingOfficeDelegate", "Observer.PrintingOfficeDelegate\Observer.PrintingOfficeDelegate.csproj", "{B9366C20-C444-4F8B-96E2-F4513534FFF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder.FluentAction", "Builder.FluentAction\Builder.FluentAction.csproj", "{DF960DBB-5F1E-44A0-971F-FCA536050637}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -150,6 +152,7 @@ Global
 		{A7515E38-47B6-4E68-AEE8-3A123130F2F3} = {F77C4F45-FC22-4184-810D-1C278F702012}
 		{5ECA680E-CF8D-4C5A-83B3-B8F0A339A6BC} = {F77C4F45-FC22-4184-810D-1C278F702012}
 		{B9366C20-C444-4F8B-96E2-F4513534FFF3} = {F77C4F45-FC22-4184-810D-1C278F702012}
+		{DF960DBB-5F1E-44A0-971F-FCA536050637} = {BF5B0393-1F4C-45B9-B53E-132168A80F73}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A15D55B4-3C0B-4F22-A483-B1981857387D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -336,5 +339,9 @@ Global
 		{B9366C20-C444-4F8B-96E2-F4513534FFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9366C20-C444-4F8B-96E2-F4513534FFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9366C20-C444-4F8B-96E2-F4513534FFF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF960DBB-5F1E-44A0-971F-FCA536050637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF960DBB-5F1E-44A0-971F-FCA536050637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF960DBB-5F1E-44A0-971F-FCA536050637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF960DBB-5F1E-44A0-971F-FCA536050637}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
