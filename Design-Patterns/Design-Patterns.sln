@@ -116,6 +116,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility.Reque
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility.Authentication", "ChainOfResponsibility.Authentication\ChainOfResponsibility.Authentication.csproj", "{243B0F7C-E744-4527-8626-2E66E473E056}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator.UserChat", "Mediator.UserChat\Mediator.UserChat.csproj", "{73B1B96C-76E4-4D65-847B-B2C452909A53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -176,6 +178,7 @@ Global
 		{A621FD6C-C2EC-492C-9BDA-9A362BD665B7} = {F77C4F45-FC22-4184-810D-1C278F702012}
 		{B9B096E2-5A8E-40B9-B15A-54B29DE631F8} = {F77C4F45-FC22-4184-810D-1C278F702012}
 		{243B0F7C-E744-4527-8626-2E66E473E056} = {F77C4F45-FC22-4184-810D-1C278F702012}
+		{73B1B96C-76E4-4D65-847B-B2C452909A53} = {F77C4F45-FC22-4184-810D-1C278F702012}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A15D55B4-3C0B-4F22-A483-B1981857387D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -394,5 +397,9 @@ Global
 		{243B0F7C-E744-4527-8626-2E66E473E056}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{243B0F7C-E744-4527-8626-2E66E473E056}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{243B0F7C-E744-4527-8626-2E66E473E056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B1B96C-76E4-4D65-847B-B2C452909A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B1B96C-76E4-4D65-847B-B2C452909A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B1B96C-76E4-4D65-847B-B2C452909A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B1B96C-76E4-4D65-847B-B2C452909A53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
