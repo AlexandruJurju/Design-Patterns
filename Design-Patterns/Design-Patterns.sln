@@ -126,6 +126,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Shapes", "Bridge.Sha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter.SquareHole", "Adapter.SquareHole\Adapter.SquareHole.csproj", "{80290065-66DD-4A36-B027-181EB93BA14A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight.Bullets", "Flyweight.Bullets\Flyweight.Bullets.csproj", "{AF8ADE2A-D787-4730-8E03-0C0C1EC39B80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -191,6 +193,7 @@ Global
 		{CFEE6863-B726-485F-8BF4-F3C7BAE8CBDC} = {46626884-E9F2-4134-B0AF-AACAE3D8773A}
 		{3B2A9F93-62FB-42B8-9C19-278F5CB5D5F6} = {46626884-E9F2-4134-B0AF-AACAE3D8773A}
 		{80290065-66DD-4A36-B027-181EB93BA14A} = {46626884-E9F2-4134-B0AF-AACAE3D8773A}
+		{AF8ADE2A-D787-4730-8E03-0C0C1EC39B80} = {46626884-E9F2-4134-B0AF-AACAE3D8773A}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A15D55B4-3C0B-4F22-A483-B1981857387D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -429,5 +432,9 @@ Global
 		{80290065-66DD-4A36-B027-181EB93BA14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80290065-66DD-4A36-B027-181EB93BA14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80290065-66DD-4A36-B027-181EB93BA14A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8ADE2A-D787-4730-8E03-0C0C1EC39B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8ADE2A-D787-4730-8E03-0C0C1EC39B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8ADE2A-D787-4730-8E03-0C0C1EC39B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8ADE2A-D787-4730-8E03-0C0C1EC39B80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
