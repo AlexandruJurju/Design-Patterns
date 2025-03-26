@@ -4,7 +4,7 @@
 // If multiple threads try to get the instance AT THE SAME TIME they will see that it's null and create a new instance
 sealed class Singleton
 {
-    private static Singleton? _instance = null!;
+    private static Singleton? _instance;
 
     public static Singleton Instance
     {

@@ -2,7 +2,7 @@
 
 sealed class Singleton
 {
-    private static Singleton? _instance = null!;
+    private static Singleton? _instance;
     private static object _lock = new();
 
     public static Singleton Instance
