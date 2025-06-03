@@ -11,6 +11,7 @@ public class AuthorizationHandler : BaseRequestHandler
             Console.WriteLine("Authorization failed: User is not authorized.");
             return;
         }
+
         Console.WriteLine("Authorization successful: User is an ADMIN.");
     }
 }

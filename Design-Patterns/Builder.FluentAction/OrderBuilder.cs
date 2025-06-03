@@ -2,9 +2,9 @@
 
 public class OrderBuilder
 {
-    private int _number;
-    private DateTime _createdOn;
     private readonly AddressBuilder _addressBuilder = AddressBuilder.Create();
+    private DateTime _createdOn;
+    private int _number;
 
     private OrderBuilder()
     {
@@ -12,7 +12,7 @@ public class OrderBuilder
 
     public static OrderBuilder Create()
     {
-        return new();
+        return new OrderBuilder();
     }
 
     public OrderBuilder WithNumber(int number)
@@ -39,7 +39,7 @@ public class OrderBuilder
         {
             Number = _number,
             CreatedOn = _createdOn,
-            ShippingAddress = _addressBuilder.Build(),
+            ShippingAddress = _addressBuilder.Build()
         };
     }
 }

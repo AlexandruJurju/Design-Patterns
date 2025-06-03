@@ -2,7 +2,7 @@
 
 public class Building
 {
-    public string Type { get; set; }
+    public string Type { get; set; } = null!;
     public List<string> Features { get; } = new();
 
     public void Show()

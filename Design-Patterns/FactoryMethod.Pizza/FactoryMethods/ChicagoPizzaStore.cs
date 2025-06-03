@@ -17,7 +17,7 @@ public class ChicagoPizzaStore : PizzaStore
                 pizza = new ChicagoStyleVeggiePizza();
                 break;
         }
-        
+
         return pizza;
     }
 }

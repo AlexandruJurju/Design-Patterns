@@ -3,12 +3,13 @@
 public class QuackCounter : IQuackable
 {
     private readonly IQuackable _duck;
-    public static int NumberOfQuacks { get; private set; }
 
     public QuackCounter(IQuackable duck)
     {
         _duck = duck;
     }
+
+    public static int NumberOfQuacks { get; private set; }
 
     public void Quack()
     {

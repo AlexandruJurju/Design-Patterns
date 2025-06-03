@@ -4,10 +4,10 @@ namespace Builder.FluentSqlConnection;
 
 public class SimpleFluentSqlConnection
 {
-    private string _server;
     private string _database;
-    private string _username;
     private string _password;
+    private string _server;
+    private string _username;
 
     public SimpleFluentSqlConnection ForServer(string server)
     {

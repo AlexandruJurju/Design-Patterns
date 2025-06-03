@@ -10,7 +10,7 @@ public class ChicagoStyleCheesePizza : Pizza
 
         Toppings.Add("Shredded Mozzarella Cheese");
     }
-    
+
     public override void Cut()
     {
         Console.WriteLine("Cutting the pizza into square slices");

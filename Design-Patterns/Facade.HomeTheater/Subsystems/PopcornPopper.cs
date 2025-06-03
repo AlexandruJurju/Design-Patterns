@@ -1,32 +1,31 @@
-﻿namespace Facade.HomeTheater.Subsystems
+﻿namespace Facade.HomeTheater.Subsystems;
+
+public class PopcornPopper
 {
-    public class PopcornPopper
+    private readonly string _description;
+
+    public PopcornPopper(string description)
     {
-        private readonly string _description;
+        _description = description;
+    }
 
-        public PopcornPopper(string description)
-        {
-            _description = description;
-        }
+    public void On()
+    {
+        Console.WriteLine($"{_description} on");
+    }
 
-        public void On()
-        {
-            Console.WriteLine($"{_description} on");
-        }
+    public void Off()
+    {
+        Console.WriteLine($"{_description} off");
+    }
 
-        public void Off()
-        {
-            Console.WriteLine($"{_description} off");
-        }
+    public void Pop()
+    {
+        Console.WriteLine($"{_description} popping popcorn!");
+    }
 
-        public void Pop()
-        {
-            Console.WriteLine($"{_description} popping popcorn!");
-        }
-
-        public override string ToString()
-        {
-            return _description;
-        }
+    public override string ToString()
+    {
+        return _description;
     }
 }

@@ -16,6 +16,11 @@ public class PancakeHouseMenu : IMenu
         AddItem("Waffles", "Waffles, with your choice of blueberries or strawberries", true, 3.59m);
     }
 
+    public IIterator CreateIterator()
+    {
+        return new PancakeHouseMenuIterator(_menuItems);
+    }
+
     public void AddItem(string name, string description,
         bool vegetarian, decimal price)
     {
@@ -26,11 +31,6 @@ public class PancakeHouseMenu : IMenu
     public List<MenuItem> GetMenuItems()
     {
         return _menuItems;
-    }
-
-    public IIterator CreateIterator()
-    {
-        return new PancakeHouseMenuIterator(_menuItems);
     }
 
     public override string ToString()

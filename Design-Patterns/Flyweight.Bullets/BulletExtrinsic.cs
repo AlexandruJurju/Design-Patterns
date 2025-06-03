@@ -2,10 +2,10 @@
 
 public class BulletExtrinsic
 {
-    private BulletIntrinsic _bulletIntrinsic;
+    private readonly BulletIntrinsic _bulletIntrinsic;
+    private float _direction;
     private float _xPosition;
     private float _yPosition;
-    private float _direction;
 
     public BulletExtrinsic(BulletIntrinsic bulletIntrinsic)
     {

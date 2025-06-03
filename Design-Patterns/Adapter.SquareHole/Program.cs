@@ -1,6 +1,6 @@
 ﻿using Adapter.SquareHole;
 
-RoundHole hole = new RoundHole(5);
+var hole = new RoundHole(5);
 IRoundPeg roundPeg = new RoundPeg(5);
 Console.WriteLine($"Round peg fits: {hole.Fits(roundPeg)}");
 

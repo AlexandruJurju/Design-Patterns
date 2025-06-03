@@ -2,8 +2,6 @@
 
 public class IdInfo
 {
-    public int IdNumber { get; set; }
-
     public IdInfo()
     {
     }
@@ -12,4 +10,6 @@ public class IdInfo
     {
         IdNumber = idNumber;
     }
+
+    public int IdNumber { get; set; }
 }

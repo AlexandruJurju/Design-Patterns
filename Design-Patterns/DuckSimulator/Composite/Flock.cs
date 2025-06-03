@@ -2,9 +2,7 @@
 
 public class Flock : IQuackable
 {
-    private List<IQuackable> _ducks = new();
-
-    public void Add(IQuackable duck) => _ducks.Add(duck);
+    private readonly List<IQuackable> _ducks = new();
 
     public void Quack()
     {
@@ -12,5 +10,10 @@ public class Flock : IQuackable
         {
             duck.Quack();
         }
+    }
+
+    public void Add(IQuackable duck)
+    {
+        _ducks.Add(duck);
     }
 }

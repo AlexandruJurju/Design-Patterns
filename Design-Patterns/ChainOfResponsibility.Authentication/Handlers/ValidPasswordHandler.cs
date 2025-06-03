@@ -1,18 +1,12 @@
 ﻿namespace ChainOfResponsibility.Authentication.Handlers;
 
-public class ValidPasswordHandler : BaseHandler
+public class ValidPasswordHandler(Database database) : BaseHandler
 {
-    private readonly Database _database;
-
-    public ValidPasswordHandler(Database database)
-    {
-        _database = database;
-    }
-
     public override bool Handle(User user)
     {
         Console.WriteLine($"Checking if user {user.Username} has the correct password");
-        if (!_database.IsValidPassword(user.Username, user.Password))
+
+        if (!database.IsValidPassword(user.Username, user.Password))
         {
             Console.WriteLine("Invalid password");
             return false;

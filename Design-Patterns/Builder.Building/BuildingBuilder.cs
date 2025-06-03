@@ -2,19 +2,13 @@
 
 public class BuildingBuilder : IBuildingBuilder
 {
-    private Building _building = new Building();
+    private Building _building = new();
 
     public BuildingBuilder()
     {
         Reset();
     }
 
-    private void Reset()
-    {
-        // Create a new Building object for each build
-        _building = new Building();
-    }
-    
     public IBuildingBuilder SetType(string type)
     {
         _building.Type = type;
@@ -56,5 +50,11 @@ public class BuildingBuilder : IBuildingBuilder
         var building = _building;
         Reset();
         return building;
+    }
+
+    private void Reset()
+    {
+        // Create a new Building object for each build
+        _building = new Building();
     }
 }

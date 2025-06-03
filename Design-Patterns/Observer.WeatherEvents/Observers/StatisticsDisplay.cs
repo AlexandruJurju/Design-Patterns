@@ -4,14 +4,14 @@ namespace Observer.WeatherEvents.Observers;
 
 public class StatisticsDisplay : IObserver, IDisplayElement
 {
-    public double Temperature { get; set; }
-    public double Humidity { get; set; }
-    public double Pressure { get; set; }
-
     public StatisticsDisplay(ISubject subject)
     {
         subject.WeatherDataChanged += Update;
     }
+
+    public double Temperature { get; set; }
+    public double Humidity { get; set; }
+    public double Pressure { get; set; }
 
     public void Display()
     {

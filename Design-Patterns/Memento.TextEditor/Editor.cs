@@ -2,28 +2,21 @@
 
 public class Editor
 {
-    private readonly LinkedList<TextArea.Memento> history;
-    private readonly TextArea textArea;
-
-    public Editor()
-    {
-        textArea = new ();
-        history = new ();
-    }
+    private readonly LinkedList<TextArea.Memento> history = new();
+    private readonly TextArea textArea = new();
 
     public void Write(string text)
     {
         textArea.Text += text + "\n";
-        history.AddLast(textArea.TakeSnapshot()); 
+        history.AddLast(textArea.TakeSnapshot());
     }
 
-    // Undo the last change
     public void Undo()
     {
         if (history.Count > 0)
         {
             history.RemoveLast();
-            var lastMemento = history.Last.Value;
+            var lastMemento = history.Last!.Value;
 
             textArea.RestoreSnapshot(lastMemento);
         }
@@ -38,4 +31,3 @@ public class Editor
         return textArea.Text;
     }
 }
-

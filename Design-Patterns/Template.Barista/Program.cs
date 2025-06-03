@@ -1,7 +1,7 @@
 ﻿using Template.Barista;
 
-Tea tea = new Tea();
-Coffee coffee = new Coffee();
+var tea = new Tea();
+var coffee = new Coffee();
 
 Console.WriteLine("Making tea...");
 tea.PrepareRecipe();

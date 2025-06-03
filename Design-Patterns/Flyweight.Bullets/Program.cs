@@ -5,7 +5,7 @@ var bullets = new List<BulletExtrinsic>();
 
 // Create 1000 small bullets
 var smallBulletType = factory.GetBulletType("small_bullet.png", "low", 1.0f);
-for (int i = 0; i < 1000; i++)
+for (var i = 0; i < 1000; i++)
 {
     var bullet = new BulletExtrinsic(smallBulletType);
     bullet.SetPosition(
@@ -18,7 +18,7 @@ for (int i = 0; i < 1000; i++)
 
 // Create 1000 large bullets
 var largeBulletType = factory.GetBulletType("large_bullet.png", "high", 2.0f);
-for (int i = 0; i < 1000; i++)
+for (var i = 0; i < 1000; i++)
 {
     var bullet = new BulletExtrinsic(largeBulletType);
     bullet.SetPosition(

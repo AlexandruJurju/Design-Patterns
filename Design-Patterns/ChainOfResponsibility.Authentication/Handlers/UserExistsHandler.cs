@@ -1,14 +1,7 @@
 ﻿namespace ChainOfResponsibility.Authentication.Handlers;
 
-public class UserExistsHandler : BaseHandler
+public class UserExistsHandler(Database database) : BaseHandler
 {
-    private readonly Database database;
-
-    public UserExistsHandler(Database database)
-    {
-        this.database = database;
-    }
-
     public override bool Handle(User user)
     {
         Console.WriteLine($"Checking if user {user.Username} exists");

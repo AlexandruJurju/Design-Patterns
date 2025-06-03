@@ -2,12 +2,7 @@
 
 public class ChatMediator : IMediator
 {
-    private readonly Dictionary<int, IUser> _users;
-
-    public ChatMediator()
-    {
-        _users = new Dictionary<int, IUser>();
-    }
+    private readonly Dictionary<int, IUser> _users = new();
 
     public void RegisterChatUser(IUser user)
     {

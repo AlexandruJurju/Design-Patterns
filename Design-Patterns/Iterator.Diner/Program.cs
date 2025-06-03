@@ -1,9 +1,9 @@
 ﻿using Iterator.Diner;
 using Iterator.Diner.Menu;
 
-PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-DinerMenu dinerMenu = new DinerMenu();
+var pancakeHouseMenu = new PancakeHouseMenu();
+var dinerMenu = new DinerMenu();
 
-Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu);
+var waitress = new Waitress(pancakeHouseMenu, dinerMenu);
 
 waitress.PrintMenu();

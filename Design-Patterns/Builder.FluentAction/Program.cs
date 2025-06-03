@@ -1,6 +1,6 @@
 ﻿using Builder.FluentAction;
 
-Order order = OrderBuilder.Create()
+var order = OrderBuilder.Create()
     .CreatedOn(DateTime.Now)
     .WithNumber(1)
     .WithShippingAddress(address => address

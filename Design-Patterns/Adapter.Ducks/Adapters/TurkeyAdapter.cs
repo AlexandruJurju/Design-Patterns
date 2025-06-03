@@ -18,7 +18,7 @@ public class TurkeyAdapter : IDuck
 
     public void Fly()
     {
-        for (int i = 0; i < 5; i++)
+        for (var i = 0; i < 5; i++)
         {
             _turkey.Fly();
         }

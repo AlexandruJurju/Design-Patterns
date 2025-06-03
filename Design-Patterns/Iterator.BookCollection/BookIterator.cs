@@ -3,7 +3,7 @@
 public class BookIterator : IIterator
 {
     private readonly BookCollection _books;
-    private int _currentIndex = 0;
+    private int _currentIndex;
 
     public BookIterator(BookCollection books)
     {

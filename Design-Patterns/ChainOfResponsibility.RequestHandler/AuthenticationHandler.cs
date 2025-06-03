@@ -11,6 +11,7 @@ public class AuthenticationHandler : BaseRequestHandler
             Console.WriteLine("Authentication failed: Invalid token.");
             return;
         }
+
         Console.WriteLine("Authentication successful.");
     }
 }

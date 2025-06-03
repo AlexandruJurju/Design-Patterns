@@ -2,12 +2,7 @@
 
 namespace Decorator.EncryptStream.Decorators;
 
-public abstract class Decorator : CloudStream
+public abstract class Decorator(CloudStream decoratedStream) : CloudStream
 {
-    protected CloudStream _decoratedStream;
-
-    protected Decorator(CloudStream decoratedStream)
-    {
-        _decoratedStream = decoratedStream;
-    }
+    protected readonly CloudStream _decoratedStream = decoratedStream;
 }

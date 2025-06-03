@@ -6,12 +6,12 @@ using DuckSimulator.Factories;
 
 AbstractDuckFactory duckFactory = new CountingDuckFactory();
 
-IQuackable redheadDuck = duckFactory.CreateRedheadDuck();
-IQuackable duckCall = duckFactory.CreateDuckCall();
-IQuackable rubberDuck = duckFactory.CreateRubberDuck();
+var redheadDuck = duckFactory.CreateRedheadDuck();
+var duckCall = duckFactory.CreateDuckCall();
+var rubberDuck = duckFactory.CreateRubberDuck();
 IQuackable gooseDuck = new QuackCounter(new GooseAdapter(new Goose()));
 
-Flock flockOfDucks = new Flock();
+var flockOfDucks = new Flock();
 flockOfDucks.Add(redheadDuck);
 flockOfDucks.Add(duckCall);
 flockOfDucks.Add(rubberDuck);
@@ -19,8 +19,8 @@ flockOfDucks.Add(gooseDuck);
 flockOfDucks.Quack();
 Console.WriteLine(QuackCounter.NumberOfQuacks);
 
-Flock flockOfMallards = new Flock();
-IQuackable mallardOne = duckFactory.CreateMallardDuck();
-IQuackable mallardTwo = duckFactory.CreateMallardDuck();
-IQuackable mallardThree = duckFactory.CreateMallardDuck();
-IQuackable mallardFour = duckFactory.CreateMallardDuck();
+var flockOfMallards = new Flock();
+var mallardOne = duckFactory.CreateMallardDuck();
+var mallardTwo = duckFactory.CreateMallardDuck();
+var mallardThree = duckFactory.CreateMallardDuck();
+var mallardFour = duckFactory.CreateMallardDuck();

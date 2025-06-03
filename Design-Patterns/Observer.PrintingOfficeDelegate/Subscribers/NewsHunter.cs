@@ -5,13 +5,13 @@ namespace Observer.PrintingOfficeDelegate.Subscribers;
 
 public class NewsHunter
 {
-    public string Name { get; set; }
-
     public NewsHunter(string name, PrintingOffice printingOffice)
     {
         Name = name;
         printingOffice.NewNewspaperEvent += HandleNewNewspaper;
     }
+
+    public string Name { get; set; }
 
     private void HandleNewNewspaper(Newspaper newspaper)
     {

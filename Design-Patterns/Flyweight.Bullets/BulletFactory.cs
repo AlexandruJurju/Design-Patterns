@@ -2,11 +2,11 @@
 
 public class BulletFactory
 {
-    private Dictionary<string, BulletIntrinsic> _bulletTypes = new();
+    private readonly Dictionary<string, BulletIntrinsic> _bulletTypes = new();
 
     public BulletIntrinsic GetBulletType(string texture, string damage, float size)
     {
-        string key = $"{texture}_{damage}_{size}";
+        var key = $"{texture}_{damage}_{size}";
 
         if (!_bulletTypes.ContainsKey(key))
         {

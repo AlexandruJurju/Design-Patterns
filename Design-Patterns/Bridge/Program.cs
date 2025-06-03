@@ -1,7 +1,7 @@
 ﻿using Bridge.Abstraction;
 using Bridge.Implementation;
 
-Abstraction abstraction = new Abstraction(new ConcreteImplementationA());
+var abstraction = new Abstraction(new ConcreteImplementationA());
 Console.Write(abstraction.Operation());
 Console.WriteLine();
 

@@ -1,10 +1,9 @@
 ﻿namespace Command;
 
-class Invoker
+internal class Invoker
 {
-    private ICommand? _onStart;
-
     private ICommand? _onFinish;
+    private ICommand? _onStart;
 
     public void SetOnStart(ICommand command)
     {
@@ -15,7 +14,7 @@ class Invoker
     {
         _onFinish = command;
     }
-    
+
     public void DoSomethingImportant()
     {
         Console.WriteLine("Invoker: Does anybody want something done before I begin?");

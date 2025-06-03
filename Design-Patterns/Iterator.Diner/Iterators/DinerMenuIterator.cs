@@ -10,7 +10,13 @@ public class DinerMenuIterator : IIterator
         _items = items;
     }
 
-    public bool HasNext() => _position < _items.Length && _items[_position] != null;
+    public bool HasNext()
+    {
+        return _position < _items.Length && _items[_position] != null;
+    }
 
-    public MenuItem Next() => _items[_position++];
+    public MenuItem Next()
+    {
+        return _items[_position++];
+    }
 }

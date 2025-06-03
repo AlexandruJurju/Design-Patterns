@@ -1,13 +1,15 @@
 ﻿using Prototype.Deserialize;
 
-Person p1 = new Person();
-p1.Age = 42;
-p1.BirthDate = Convert.ToDateTime("1977-01-01");
-p1.Name = "Jack Daniels";
-p1.IdInfo = new IdInfo(666);
+var p1 = new Person
+{
+    Age = 42,
+    BirthDate = Convert.ToDateTime("1977-01-01"),
+    Name = "Jack Daniels",
+    IdInfo = new IdInfo(666)
+};
 
-Person p2 = (Person)p1.Clone();
-Person p3 = (Person)p1.Clone();
+var p2 = (Person)p1.Clone();
+var p3 = (Person)p1.Clone();
 
 Console.WriteLine("Original values of p1, p2, p3:");
 Console.WriteLine("   p1 instance values: ");

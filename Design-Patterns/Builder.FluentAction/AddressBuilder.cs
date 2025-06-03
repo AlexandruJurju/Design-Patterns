@@ -2,11 +2,11 @@
 
 public class AddressBuilder
 {
-    private string _street = null!;
     private string _city = null!;
-    private string _zip = null!;
-    private string? _state;
     private string _country = null!;
+    private string? _state;
+    private string _street = null!;
+    private string _zip = null!;
 
     private AddressBuilder()
     {
@@ -14,7 +14,7 @@ public class AddressBuilder
 
     public static AddressBuilder Create()
     {
-        return new();
+        return new AddressBuilder();
     }
 
     public AddressBuilder Street(string street)

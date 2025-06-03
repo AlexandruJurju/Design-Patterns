@@ -1,14 +1,12 @@
-﻿
-
-namespace FactoryMethod.Pizza.FactoryMethods;
+﻿namespace FactoryMethod.Pizza.FactoryMethods;
 
 public abstract class PizzaStore
 {
     public abstract Products.Pizza CreatePizza(string name);
-    
+
     public Products.Pizza OrderPizza(string type)
     {
-        Products.Pizza pizza = CreatePizza(type);
+        var pizza = CreatePizza(type);
         Console.WriteLine("--- Making a " + pizza.Name + " ---");
         pizza.Prepare();
         pizza.Bake();

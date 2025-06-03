@@ -1,11 +1,11 @@
 ﻿using ChainOfResponsibility.Authentication;
 using ChainOfResponsibility.Authentication.Handlers;
 
-Database database = new Database();
+var database = new Database();
 
 var userExistsHandler = new UserExistsHandler(database);
 var validPasswordHandler = new ValidPasswordHandler(database);
-var roleCheckHandler = new RoleCheckHandler(database);
+var roleCheckHandler = new RoleCheckHandler();
 
 
 userExistsHandler

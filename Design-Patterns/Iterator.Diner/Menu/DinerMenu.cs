@@ -5,8 +5,8 @@ namespace Iterator.Diner.Menu;
 public class DinerMenu : IMenu
 {
     private const int MAX_ITEMS = 6;
-    private int _numberOfItems;
     private readonly MenuItem[] _menuItems;
+    private int _numberOfItems;
 
     public DinerMenu()
     {
@@ -18,6 +18,11 @@ public class DinerMenu : IMenu
         AddItem("Hotdog", "A hot dog, with sauerkraut, relish, onions, topped with cheese", false, 3.05m);
         AddItem("Steamed Veggies and Brown Rice", "Steamed vegetables over brown rice", true, 3.99m);
         AddItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89m);
+    }
+
+    public IIterator CreateIterator()
+    {
+        return new DinerMenuIterator(_menuItems);
     }
 
     public void AddItem(string name, string description,
@@ -37,10 +42,5 @@ public class DinerMenu : IMenu
     public MenuItem[] GetMenuItems()
     {
         return _menuItems;
-    }
-
-    public IIterator CreateIterator()
-    {
-        return new DinerMenuIterator(_menuItems);
     }
 }

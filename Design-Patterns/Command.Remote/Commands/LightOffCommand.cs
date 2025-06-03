@@ -2,16 +2,15 @@
 
 namespace Command.Remote.Commands;
 
-public class LightOffCommand : ICommand
+public class LightOffCommand(Light light) : ICommand
 {
-    private readonly Light _light;
-
-    public LightOffCommand(Light light)
+    public void Execute()
     {
-        _light = light;
+        light.Off();
     }
 
-    public void Execute() => _light.Off();
-
-    public void Undo() => _light.On();
+    public void Undo()
+    {
+        light.On();
+    }
 }

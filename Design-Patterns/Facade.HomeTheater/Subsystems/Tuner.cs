@@ -1,48 +1,47 @@
 ﻿using System.Globalization;
 
-namespace Facade.HomeTheater.Subsystems
+namespace Facade.HomeTheater.Subsystems;
+
+public class Tuner
 {
-    public class Tuner
+    private readonly Amplifier _amplifier;
+    private readonly string _description;
+    private double _frequency;
+
+    public Tuner(string description, Amplifier amplifier)
     {
-        private readonly string _description;
-        private readonly Amplifier _amplifier;
-        private double _frequency;
+        _description = description;
+        _amplifier = amplifier;
+    }
 
-        public Tuner(string description, Amplifier amplifier)
-        {
-            _description = description;
-            _amplifier = amplifier;
-        }
+    public void On()
+    {
+        Console.WriteLine($"{_description} on");
+    }
 
-        public void On()
-        {
-            Console.WriteLine($"{_description} on");
-        }
+    public void Off()
+    {
+        Console.WriteLine($"{_description} off");
+    }
 
-        public void Off()
-        {
-            Console.WriteLine($"{_description} off");
-        }
+    public void SetFrequency(double frequency)
+    {
+        Console.WriteLine($"{_description} setting frequency to {frequency.ToString(CultureInfo.InvariantCulture)}");
+        _frequency = frequency;
+    }
 
-        public void SetFrequency(double frequency)
-        {
-            Console.WriteLine($"{_description} setting frequency to {frequency.ToString(CultureInfo.InvariantCulture)}");
-            _frequency = frequency;
-        }
+    public void SetAm()
+    {
+        Console.WriteLine($"{_description} setting AM mode");
+    }
 
-        public void SetAm()
-        {
-            Console.WriteLine($"{_description} setting AM mode");
-        }
+    public void SetFm()
+    {
+        Console.WriteLine($"{_description} setting FM mode");
+    }
 
-        public void SetFm()
-        {
-            Console.WriteLine($"{_description} setting FM mode");
-        }
-
-        public override string ToString()
-        {
-            return _description;
-        }
+    public override string ToString()
+    {
+        return _description;
     }
 }

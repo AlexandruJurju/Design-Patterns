@@ -2,21 +2,21 @@
 
 public class Person
 {
+    public IdInfo IdInfo;
     public int Age { get; set; }
     public DateTime BirthDate { get; set; }
     public string Name { get; set; }
-    public IdInfo IdInfo;
 
     public Person ShallowCopy()
     {
-        return (Person) MemberwiseClone();
+        return (Person)MemberwiseClone();
     }
 
     public Person DeepCopy()
     {
-        Person clone = (Person) MemberwiseClone();
+        var clone = (Person)MemberwiseClone();
         clone.IdInfo = new IdInfo(IdInfo.IdNumber);
-        clone.Name = String.Copy(Name);
+        clone.Name = string.Copy(Name);
         return clone;
     }
 }

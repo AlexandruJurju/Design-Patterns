@@ -13,6 +13,9 @@ public class GooseAdapter : IQuackable
     {
         _goose.Honk();
     }
-    
-    public override string ToString() => "Goose pretending to be a Duck";
+
+    public override string ToString()
+    {
+        return "Goose pretending to be a Duck";
+    }
 }

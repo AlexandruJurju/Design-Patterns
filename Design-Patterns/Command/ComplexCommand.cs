@@ -2,11 +2,10 @@
 
 public class ComplexCommand : ICommand
 {
-    private readonly Receiver _receiver;
-
     private readonly string _a;
 
     private readonly string _b;
+    private readonly Receiver _receiver;
 
     public ComplexCommand(Receiver receiver, string a, string b)
     {

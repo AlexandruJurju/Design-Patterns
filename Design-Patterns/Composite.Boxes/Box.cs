@@ -1,12 +1,8 @@
 ﻿namespace Composite.Boxes;
 
-public class Box : Item
+public class Box(string name) : Item(name)
 {
-    private List<Item> _items = new List<Item>();
-    
-    public Box(string name) : base(name)
-    {
-    }
+    private readonly List<Item> _items = new();
 
     public void AddItem(Item item)
     {
@@ -16,10 +12,12 @@ public class Box : Item
     public override decimal GetPrice()
     {
         decimal totalPrice = 0;
+
         foreach (var item in _items)
         {
             totalPrice += item.GetPrice();
         }
+
         return totalPrice;
     }
 }

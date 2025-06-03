@@ -2,7 +2,13 @@
 
 public class Goose
 {
-    public void Honk() => Console.WriteLine("Honk");
+    public void Honk()
+    {
+        Console.WriteLine("Honk");
+    }
 
-    public override string ToString() => "Adapter";
+    public override string ToString()
+    {
+        return "Adapter";
+    }
 }

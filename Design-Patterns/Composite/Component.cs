@@ -2,10 +2,6 @@
 
 public abstract class Component
 {
-    public Component()
-    {
-    }
-
     public abstract string Operation();
 
     public virtual void Add(Component component)

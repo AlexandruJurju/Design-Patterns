@@ -6,7 +6,7 @@ public abstract class PizzaStore
 
     public Products.Pizzas.Pizza OrderPizza(string type)
     {
-        Products.Pizzas.Pizza pizza = CreatePizza(type);
+        var pizza = CreatePizza(type);
         Console.WriteLine("--- Making a " + pizza.Name + " ---");
         pizza.Prepare();
         pizza.Bake();

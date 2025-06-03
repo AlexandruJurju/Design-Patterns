@@ -1,27 +1,26 @@
-﻿namespace Facade.HomeTheater.Subsystems
+﻿namespace Facade.HomeTheater.Subsystems;
+
+public class Screen
 {
-    public class Screen
+    private readonly string _description;
+
+    public Screen(string description)
     {
-        private readonly string _description;
+        _description = description;
+    }
 
-        public Screen(string description)
-        {
-            _description = description;
-        }
+    public void Up()
+    {
+        Console.WriteLine($"{_description} going up");
+    }
 
-        public void Up()
-        {
-            Console.WriteLine($"{_description} going up");
-        }
+    public void Down()
+    {
+        Console.WriteLine($"{_description} going down");
+    }
 
-        public void Down()
-        {
-            Console.WriteLine($"{_description} going down");
-        }
-
-        public override string ToString()
-        {
-            return _description;
-        }
+    public override string ToString()
+    {
+        return _description;
     }
 }

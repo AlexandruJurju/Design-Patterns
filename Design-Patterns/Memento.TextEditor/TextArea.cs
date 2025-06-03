@@ -14,13 +14,8 @@ public class TextArea
         Text = memento.Text;
     }
 
-    public class Memento
+    public class Memento(string text)
     {
-        public string Text { get; set; }
-
-        public Memento(string text)
-        {
-            Text = text;
-        }
+        public string Text { get; set; } = text;
     }
 }

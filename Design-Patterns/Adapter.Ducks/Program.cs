@@ -1,9 +1,9 @@
 ﻿using Adapter.Ducks.Adapters;
 using Adapter.Ducks.Models;
 
-MallardDuck duck = new MallardDuck();
+var duck = new MallardDuck();
 
-WildTurkey turkey = new WildTurkey();
+var turkey = new WildTurkey();
 IDuck turkeyAdapter = new TurkeyAdapter(turkey);
 
 turkeyAdapter.Quack();

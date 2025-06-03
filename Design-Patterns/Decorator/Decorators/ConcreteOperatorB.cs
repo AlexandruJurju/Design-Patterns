@@ -2,12 +2,8 @@
 
 namespace Decorator.Decorators;
 
-class ConcreteDecoratorB : Decorator
+internal class ConcreteDecoratorB(Component comp) : Decorator(comp)
 {
-    public ConcreteDecoratorB(Component comp) : base(comp)
-    {
-    }
-
     public override string Operation()
     {
         return $"ConcreteDecoratorB({base.Operation()})";

@@ -4,13 +4,8 @@ namespace Iterator.BookCollection;
 
 public class BookCollectionEnumerable : IEnumerable<string>
 {
-    private List<string> _titles = new();
+    private readonly List<string> _titles = new();
 
-    public void Add(string title)
-    {
-        _titles.Add(title);
-    }
-    
     public IEnumerator<string> GetEnumerator()
     {
         foreach (var title in _titles)
@@ -22,5 +17,10 @@ public class BookCollectionEnumerable : IEnumerable<string>
     IEnumerator IEnumerable.GetEnumerator()
     {
         return GetEnumerator();
+    }
+
+    public void Add(string title)
+    {
+        _titles.Add(title);
     }
 }

@@ -1,32 +1,31 @@
-﻿namespace Facade.HomeTheater.Subsystems
+﻿namespace Facade.HomeTheater.Subsystems;
+
+public class TheaterLights
 {
-    public class TheaterLights
+    private readonly string _description;
+
+    public TheaterLights(string description)
     {
-        private readonly string _description;
+        _description = description;
+    }
 
-        public TheaterLights(string description)
-        {
-            _description = description;
-        }
+    public void On()
+    {
+        Console.WriteLine($"{_description} on");
+    }
 
-        public void On()
-        {
-            Console.WriteLine($"{_description} on");
-        }
+    public void Off()
+    {
+        Console.WriteLine($"{_description} off");
+    }
 
-        public void Off()
-        {
-            Console.WriteLine($"{_description} off");
-        }
+    public void Dim(int level)
+    {
+        Console.WriteLine($"{_description} dimming to {level.ToString()}%");
+    }
 
-        public void Dim(int level)
-        {
-            Console.WriteLine($"{_description} dimming to {level.ToString()}%");
-        }
-
-        public override string ToString()
-        {
-            return _description;
-        }
+    public override string ToString()
+    {
+        return _description;
     }
 }

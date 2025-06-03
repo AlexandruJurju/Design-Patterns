@@ -1,7 +1,6 @@
 ﻿using Visitor.Elements;
 using Visitor.Visitors;
 
-
 IElement element1 = new ConcreteElement1();
 IElement element2 = new ConcreteElement2();
 

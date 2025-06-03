@@ -1,6 +1,6 @@
 ﻿namespace Decorator.Starbuzz.Components;
 
-sealed class Espresso : Beverage
+internal sealed class Espresso : Beverage
 {
     public Espresso()
     {

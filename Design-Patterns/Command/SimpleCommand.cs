@@ -3,7 +3,7 @@
 public class SimpleCommand : ICommand
 {
     private readonly string _payload;
-    
+
     public SimpleCommand(string payload)
     {
         _payload = payload;

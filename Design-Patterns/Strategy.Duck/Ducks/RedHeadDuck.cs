@@ -1,5 +1,4 @@
 ﻿using Strategy.Duck.Strategies;
-using Strategy.Duck.Ducks.Abstractions;
 
 namespace Strategy.Duck.Ducks;
 

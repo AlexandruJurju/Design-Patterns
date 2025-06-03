@@ -1,13 +1,13 @@
 ﻿using Prototype.Simple;
 
-Person p1 = new Person();
+var p1 = new Person();
 p1.Age = 42;
 p1.BirthDate = Convert.ToDateTime("1977-01-01");
 p1.Name = "Jack Daniels";
 p1.IdInfo = new IdInfo(666);
 
-Person p2 = p1.ShallowCopy();
-Person p3 = p1.DeepCopy();
+var p2 = p1.ShallowCopy();
+var p3 = p1.DeepCopy();
 
 Console.WriteLine("Original values of p1, p2, p3:");
 Console.WriteLine("   p1 instance values: ");

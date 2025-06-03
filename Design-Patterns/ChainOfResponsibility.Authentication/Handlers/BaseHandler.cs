@@ -9,7 +9,9 @@ public abstract class BaseHandler : IHandler
         _next = handler;
         return handler;
     }
-    
+
+    public abstract bool Handle(User user);
+
     protected bool HandleNext(User user)
     {
         if (_next is null)
@@ -19,6 +21,4 @@ public abstract class BaseHandler : IHandler
 
         return _next.Handle(user);
     }
-    
-    public abstract bool Handle(User user);
 }

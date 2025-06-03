@@ -3,12 +3,8 @@ using Decorator.EncryptStream.Components;
 
 namespace Decorator.EncryptStream.Decorators;
 
-public class EncryptCloudStream : Decorator
+public class EncryptCloudStream(CloudStream decoratedStream) : Decorator(decoratedStream)
 {
-    public EncryptCloudStream(CloudStream decoratedStream) : base(decoratedStream)
-    {
-    }
-
     public override void Send(string data)
     {
         var encryptedData = Encrypt(data);

@@ -4,11 +4,14 @@ public class Product
 {
     public List<string> Parts { get; } = new();
 
-    public void Show() => Console.WriteLine("Product Parts: " + string.Join(", ", Parts));
+    public void Show()
+    {
+        Console.WriteLine("Product Parts: " + string.Join(", ", Parts));
+    }
 
     public class Builder
     {
-        private Product _product = new();
+        private readonly Product _product = new();
 
         public Builder AddPartA()
         {
@@ -22,6 +25,9 @@ public class Product
             return this;
         }
 
-        public Product Build() => _product;
+        public Product Build()
+        {
+            return _product;
+        }
     }
 }

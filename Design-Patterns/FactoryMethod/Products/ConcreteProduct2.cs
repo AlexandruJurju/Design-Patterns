@@ -1,6 +1,6 @@
 ﻿namespace FactoryMethod.Products;
 
-class ConcreteProduct2 : IProduct
+internal class ConcreteProduct2 : IProduct
 {
     public string Operation()
     {

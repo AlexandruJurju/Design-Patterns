@@ -7,10 +7,7 @@ var connection1 = new SimpleFluentSqlConnection()
     .Connect();
 
 var connection2 = FluentSqlConnection
-    .CreateConnection(config =>
-    {
-        config.ConnectionName = "FluentSqlConnection";
-    })
+    .CreateConnection(config => { config.ConnectionName = "FluentSqlConnection"; })
     .ForServer("localhost")
     .ForDatabase("master")
     .AndUsername("admin")

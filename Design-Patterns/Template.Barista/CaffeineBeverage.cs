@@ -9,16 +9,16 @@ public abstract class CaffeineBeverage
         PourInCup();
         AddCondiments();
     }
-    
-    public abstract void Brew();
-    public abstract void AddCondiments();
 
-    public virtual void BoilWater()
+    protected abstract void Brew();
+    protected abstract void AddCondiments();
+
+    private void BoilWater()
     {
         Console.WriteLine("Boiling water");
     }
 
-    public virtual void PourInCup()
+    private void PourInCup()
     {
         Console.WriteLine("Pouring into cup");
     }

@@ -8,6 +8,6 @@ public class SquarePegAdapter : IRoundPeg
     {
         _squarePeg = squarePeg;
     }
-    
+
     public double Radius => _squarePeg.Width * Math.Sqrt(2) / 2;
 }

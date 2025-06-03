@@ -38,17 +38,20 @@ public abstract class Pizza
         {
             result.AppendLine(Dough.Name);
         }
+
         if (Sauce != null)
         {
             result.AppendLine(Sauce.Name);
         }
+
         if (Cheese != null)
         {
             result.AppendLine(Cheese.Name);
         }
+
         if (Veggies != null)
         {
-            for (int i = 0; i < Veggies.Length; i++)
+            for (var i = 0; i < Veggies.Length; i++)
             {
                 result.Append(Veggies[i].Name);
                 if (i < Veggies.Length - 1)
@@ -56,12 +59,15 @@ public abstract class Pizza
                     result.Append(", ");
                 }
             }
+
             result.Append("\n");
         }
+
         if (Clam != null)
         {
             result.AppendLine(Clam.Name);
         }
+
         if (Pepperoni != null)
         {
             result.AppendLine(Pepperoni.Name);

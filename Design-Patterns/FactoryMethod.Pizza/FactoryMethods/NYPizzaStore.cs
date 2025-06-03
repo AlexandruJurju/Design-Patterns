@@ -6,7 +6,7 @@ public class NYPizzaStore : PizzaStore
 {
     public override Products.Pizza CreatePizza(string name)
     {
-        Products.Pizza pizza = null;
+        Products.Pizza? pizza = null;
         switch (name)
         {
             case "cheese":

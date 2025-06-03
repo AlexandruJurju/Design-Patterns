@@ -3,7 +3,7 @@
 // using Fluent Interface for method chaining
 public class ComputerBuilder
 {
-    private Computer _computer = new Computer();
+    private readonly Computer _computer = new();
 
     public ComputerBuilder WithCPU(string cpu)
     {

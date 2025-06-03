@@ -10,13 +10,43 @@ public class FluentSqlConnection :
     IPasswordSelectionStage,
     IConnectionInit
 {
-    private string _server;
     private string _database;
-    private string _username;
     private string _password;
+    private string _server;
+    private string _username;
 
     private FluentSqlConnection()
     {
+    }
+
+    public IDbConnection Connect()
+    {
+        var connection = new SqlConnection($"Server={_server};Database={_database};User Id={_username};Password={_password}");
+        return connection;
+    }
+
+    public IUsernameSelectionStage ForDatabase(string database)
+    {
+        _username = database;
+        return this;
+    }
+
+    public IConnectionInit AndPassword(string password)
+    {
+        _password = password;
+        return this;
+    }
+
+    public IDatabaseSelectionStage ForServer(string server)
+    {
+        _server = server;
+        return this;
+    }
+
+    public IPasswordSelectionStage AndUsername(string username)
+    {
+        _username = username;
+        return this;
     }
 
     public static IServerSelectionStage CreateConnection(
@@ -28,36 +58,6 @@ public class FluentSqlConnection :
 
         Console.WriteLine(configuration.ConnectionName);
         return new FluentSqlConnection();
-    }
-
-    public IDatabaseSelectionStage ForServer(string server)
-    {
-        _server = server;
-        return this;
-    }
-
-    public IUsernameSelectionStage ForDatabase(string database)
-    {
-        _username = database;
-        return this;
-    }
-
-    public IPasswordSelectionStage AndUsername(string username)
-    {
-        _username = username;
-        return this;
-    }
-
-    public IConnectionInit AndPassword(string password)
-    {
-        _password = password;
-        return this;
-    }
-
-    public IDbConnection Connect()
-    {
-        var connection = new SqlConnection($"Server={_server};Database={_database};User Id={_username};Password={_password}");
-        return connection;
     }
 }
 

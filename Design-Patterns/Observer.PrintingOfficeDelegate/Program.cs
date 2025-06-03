@@ -2,20 +2,20 @@
 using Observer.PrintingOfficeDelegate.Publishers;
 using Observer.PrintingOfficeDelegate.Subscribers;
 
-PrintingOffice printingOffice = new PrintingOffice();
+var printingOffice = new PrintingOffice();
 
-BookLover bookLover1 = new BookLover("James", printingOffice);
-BookLover bookLover2 = new BookLover("Mary", printingOffice);
+var bookLover1 = new BookLover("James", printingOffice);
+var bookLover2 = new BookLover("Mary", printingOffice);
 
-NewsHunter newsHunter1 = new NewsHunter("Donald", printingOffice);
-NewsHunter newsHunter2 = new NewsHunter("Jane", printingOffice);
-NewsHunter newsHunter3 = new NewsHunter("Peter", printingOffice);
+var newsHunter1 = new NewsHunter("Donald", printingOffice);
+var newsHunter2 = new NewsHunter("Jane", printingOffice);
+var newsHunter3 = new NewsHunter("Peter", printingOffice);
 
 printingOffice.PrintBook(new Book
 {
     Author = "Stephen King",
     Title = "The shining",
-    Year = 1997,
+    Year = 1997
 });
 
 Console.WriteLine();
@@ -23,5 +23,5 @@ Console.WriteLine();
 printingOffice.PrintNewspaper(new Newspaper
 {
     Number = 123,
-    Title = "New world event",
+    Title = "New world event"
 });

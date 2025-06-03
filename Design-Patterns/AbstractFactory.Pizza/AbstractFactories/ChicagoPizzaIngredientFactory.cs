@@ -1,5 +1,4 @@
-﻿using AbstractFactory.Pizza.Products;
-using AbstractFactory.Pizza.Products.Ingredients;
+﻿using AbstractFactory.Pizza.Products.Ingredients;
 using AbstractFactory.Pizza.Products.Ingredients.Abstractions;
 
 namespace AbstractFactory.Pizza.AbstractFactories;

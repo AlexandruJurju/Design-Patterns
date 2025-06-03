@@ -1,8 +1,7 @@
-﻿
-using Visitor.DocumentDometrain.Elements;
+﻿using Visitor.DocumentDometrain.Elements;
 using Visitor.DocumentDometrain.Visitors;
 
-List<IDocumentElement> elements = new List<IDocumentElement>
+var elements = new List<IDocumentElement>
 {
     new TitleElement("Title"),
     new SubtitleElement("Subtitle"),
@@ -11,7 +10,7 @@ List<IDocumentElement> elements = new List<IDocumentElement>
 };
 
 Console.WriteLine("Text format: WORD");
-TextDocumentVisitor textDocumentVisitor = new TextDocumentVisitor();
+var textDocumentVisitor = new TextDocumentVisitor();
 
 foreach (var element in elements)
 {
@@ -19,7 +18,7 @@ foreach (var element in elements)
 }
 
 Console.WriteLine("Text format: MARKDOWN");
-MarkdownDocumentVisitor markdownDocumentVisitor = new MarkdownDocumentVisitor();
+var markdownDocumentVisitor = new MarkdownDocumentVisitor();
 
 foreach (var element in elements)
 {

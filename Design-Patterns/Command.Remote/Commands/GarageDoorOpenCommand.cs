@@ -2,24 +2,17 @@
 
 namespace Command.Remote.Commands;
 
-public class GarageDoorOpenCommand : ICommand
+public class GarageDoorOpenCommand(GarageDoor garageDoor) : ICommand
 {
-    private readonly GarageDoor _garageDoor;
-
-    public GarageDoorOpenCommand(GarageDoor garageDoor)
-    {
-        _garageDoor = garageDoor;
-    }
-
     public void Execute()
     {
-        _garageDoor.Up();
-        _garageDoor.LightOn();
+        garageDoor.Up();
+        garageDoor.LightOn();
     }
 
     public void Undo()
     {
-        _garageDoor.Down();
-        _garageDoor.LightOff();
+        garageDoor.Down();
+        garageDoor.LightOff();
     }
 }

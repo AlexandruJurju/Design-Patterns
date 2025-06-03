@@ -1,13 +1,8 @@
 ﻿namespace Composite.Boxes;
 
-public class Product : Item
+public class Product(string name, decimal price) : Item(name)
 {
-    public decimal Price { get; }
-
-    public Product(string name, decimal price) : base(name)
-    {
-        Price = price;
-    }
+    private decimal Price { get; } = price;
 
     public override decimal GetPrice()
     {

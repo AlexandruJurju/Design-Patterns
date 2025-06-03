@@ -1,7 +1,5 @@
-﻿using System.Linq;
-
-ParallelEnumerable.Range(0, 100)
+﻿ParallelEnumerable.Range(0, 100)
     .ForAll(_ =>
     {
-        Singleton.Naive.Singleton singleton = Singleton.Naive.Singleton.Instance;
+        var singleton = Singleton.Naive.Singleton.Instance;
     });

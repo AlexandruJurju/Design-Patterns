@@ -5,13 +5,13 @@ namespace Observer.PrintingOfficeDelegate.Subscribers;
 
 public class BookLover
 {
-    public string Name { get; set; }
-
     public BookLover(string name, PrintingOffice printingOffice)
     {
         Name = name;
         printingOffice.NewBookEvent += HandleNewBook;
     }
+
+    public string Name { get; set; }
 
     private void HandleNewBook(Book book)
     {

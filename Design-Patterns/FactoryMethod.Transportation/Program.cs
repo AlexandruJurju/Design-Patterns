@@ -1,5 +1,4 @@
 ﻿using FactoryMethod.Transportation.Creators;
-using FactoryMethod.Transportation.Products;
 
 Logistics roadLogistics = new RoadLogistics();
 Console.WriteLine(roadLogistics.Deliver());

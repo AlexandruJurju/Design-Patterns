@@ -1,7 +1,6 @@
 ﻿namespace Bridge.Implementation;
 
-
-class ConcreteImplementationB : IImplementation
+internal class ConcreteImplementationB : IImplementation
 {
     public string OperationImplementation()
     {

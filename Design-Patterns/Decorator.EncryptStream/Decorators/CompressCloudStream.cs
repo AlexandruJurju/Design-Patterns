@@ -2,12 +2,8 @@
 
 namespace Decorator.EncryptStream.Decorators;
 
-public class CompressCloudStream : Decorator
+public class CompressCloudStream(CloudStream decoratedStream) : Decorator(decoratedStream)
 {
-    public CompressCloudStream(CloudStream decoratedStream) : base(decoratedStream)
-    {
-    }
-
     public override void Send(string data)
     {
         var compressed = Compress(data);

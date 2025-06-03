@@ -22,9 +22,7 @@ public abstract class Decorator : Component
         {
             return _component.Operation();
         }
-        else
-        {
-            return string.Empty;
-        }
+
+        return string.Empty;
     }
 }

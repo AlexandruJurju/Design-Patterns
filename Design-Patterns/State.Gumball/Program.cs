@@ -1,6 +1,6 @@
 ﻿using State.Gumball;
 
-GumballMachine gumballMachine = new GumballMachine(2);
+var gumballMachine = new GumballMachine(2);
 
 Console.WriteLine(gumballMachine);
 

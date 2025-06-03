@@ -7,5 +7,5 @@ IColor blue = new Blue();
 Shape redCircle = new Circle(red);
 Shape blueSquare = new Square(blue);
 
-redCircle.Draw(); 
+redCircle.Draw();
 blueSquare.Draw();

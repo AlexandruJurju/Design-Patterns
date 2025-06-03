@@ -6,7 +6,13 @@ public class RemoteControls
 {
     private ICommand _slot;
 
-    public void SetCommand(ICommand command) => _slot = command;
+    public void SetCommand(ICommand command)
+    {
+        _slot = command;
+    }
 
-    public void PressButton() => _slot.Execute();
+    public void PressButton()
+    {
+        _slot.Execute();
+    }
 }

@@ -21,10 +21,10 @@ public class Composite : Component
 
     public override string Operation()
     {
-        int i = 0;
-        string result = "Branch(";
+        var i = 0;
+        var result = "Branch(";
 
-        foreach (Component component in _children)
+        foreach (var component in _children)
         {
             result += component.Operation();
             if (i != _children.Count - 1)

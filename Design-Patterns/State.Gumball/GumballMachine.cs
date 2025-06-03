@@ -5,15 +5,6 @@ namespace State.Gumball;
 
 public class GumballMachine
 {
-    public int Count { get; private set; }
-
-    public IState State { get; private set; }
-
-    public IState SoldOutState { get; }
-    public IState NoQuarterState { get; }
-    public IState HasQuarterState { get; }
-    public IState SoldState { get; }
-
     public GumballMachine(int numberGumballs)
     {
         SoldOutState = new SoldOutState(this);
@@ -25,6 +16,15 @@ public class GumballMachine
 
         State = numberGumballs > 0 ? NoQuarterState : SoldOutState;
     }
+
+    public int Count { get; private set; }
+
+    public IState State { get; private set; }
+
+    public IState SoldOutState { get; }
+    public IState NoQuarterState { get; }
+    public IState HasQuarterState { get; }
+    public IState SoldState { get; }
 
     public void InsertQuarter()
     {
@@ -65,11 +65,11 @@ public class GumballMachine
 
     public override string ToString()
     {
-        StringBuilder result = new StringBuilder();
+        var result = new StringBuilder();
 
         result.Append("\nMighty Gumball, Inc.");
         result.Append("\nC#-enabled Standing Gumball Model #2016");
-        result.Append("\nInventory: " + Count.ToString() + " gumball");
+        result.Append("\nInventory: " + Count + " gumball");
         if (Count != 1)
         {
             result.Append("s");

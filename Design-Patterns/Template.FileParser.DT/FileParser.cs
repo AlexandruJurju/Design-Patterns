@@ -13,7 +13,7 @@ public abstract class FileParser
         var content = File.ReadAllText(filePath);
 
         LogOperation("Parsing file");
-        Dictionary<string, string> data = ParseContent(content);
+        var data = ParseContent(content);
 
         LogOperation("Enriching data");
         EnrichData(data);

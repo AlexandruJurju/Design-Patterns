@@ -8,7 +8,7 @@ public abstract class Logistics
 
     public string Deliver()
     {
-        ITransport transport = CreateTransport();
+        var transport = CreateTransport();
 
         return $"Moving with {transport.Deliver()}";
     }

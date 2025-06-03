@@ -1,8 +1,8 @@
 ﻿namespace Adapter.SquareHole;
 
-class RoundHole
+internal class RoundHole
 {
-    private double _radius;
+    private readonly double _radius;
 
     public RoundHole(double radius)
     {

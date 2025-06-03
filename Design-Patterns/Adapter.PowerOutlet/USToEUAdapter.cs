@@ -11,13 +11,13 @@ public class USToEUAdapter : IPowerOutlet
 
     public void SupplyPower(int voltage)
     {
-        int convertedVoltage = ConvertVoltage(220, 110);
+        var convertedVoltage = ConvertVoltage(220, 110);
 
         _usPowerOutlet.ProvidePower(convertedVoltage);
 
-        Console.WriteLine($"Adapter converted 220V to 110V for the US power outlet.");
+        Console.WriteLine("Adapter converted 220V to 110V for the US power outlet.");
     }
-    
+
     private int ConvertVoltage(int inputVoltage, int outputVoltage)
     {
         Console.WriteLine($"Converting {inputVoltage}V to {outputVoltage}V.");
