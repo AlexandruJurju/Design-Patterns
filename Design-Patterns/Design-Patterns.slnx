@@ -1,0 +1,110 @@
+﻿<Solution>
+    <Folder Name="/Behavioral/"/>
+    <Folder Name="/Behavioral/ChainOfResponsibility/">
+        <Project Path="Behavioral/ChainOfResponsibility/ChainOfResponsibility.Authentication\ChainOfResponsibility.Authentication.csproj"
+                 Type="Classic C#"/>
+        <Project Path="Behavioral/ChainOfResponsibility/ChainOfResponsibility.RequestHandler\ChainOfResponsibility.RequestHandler.csproj"
+                 Type="Classic C#"/>
+        <Project Path="Behavioral/ChainOfResponsibility/ChainOfResponsibility\ChainOfResponsibility.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Behavioral/Command/">
+        <Project Path="Behavioral/Command/Command.Remote\Command.Remote.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Command/Command\Command.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Behavioral/Iterator/">
+        <Project Path="Behavioral/Iterator/Iterator.BookCollection\Iterator.BookCollection.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Iterator/Iterator.Diner\Iterator.Diner.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Behavioral/Mediator/">
+        <Project Path="Behavioral/Mediator/Mediator.UserChat\Mediator.UserChat.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Behavioral/Memento/">
+        <Project Path="Behavioral/Memento/Memento.TextEditor\Memento.TextEditor.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Behavioral/Observer/">
+        <Project Path="Behavioral/Observer/Observer.PrintingOfficeDelegate\Observer.PrintingOfficeDelegate.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Observer/Observer.PrintingOfficeEvent\Observer.PrintingOfficeEvent.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Observer/Observer.WeatherEvents\Observer.WeatherEvents.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Observer/Observer.WeatherWithObservable\Observer.WeatherWithObservable.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Observer/Observer.Weather\Observer.Weather.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Observer/Observer\Observer.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Behavioral/State/">
+        <Project Path="Behavioral/State/State.GameCharacter\State.GameCharacter.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/State/State.Gumball\State.Gumball.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/State/State\State.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Behavioral/Strategy/">
+        <Project Path="Behavioral/Strategy/Strategy.Duck\Strategy.Duck.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Strategy/Strategy.OrderNotifier\Strategy.OrderNotifier.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Strategy/Strategy\Strategy.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Behavioral/Template/">
+        <Project Path="Behavioral/Template/Template.Barista\Template.Barista.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Template/Template.FileParser.DT\Template.FileParser.DT.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Template/Template\Template.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Behavioral/Visitor/">
+        <Project Path="Behavioral/Visitor/Visitor.DocumentDometrain\Visitor.DocumentDometrain.csproj" Type="Classic C#"/>
+        <Project Path="Behavioral/Visitor/Visitor\Visitor.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Creational/"/>
+    <Folder Name="/Creational/AbstractFactory/">
+        <Project Path="Creational\AbstractFactory\AbstractFactory.Furniture\AbstractFactory.Furniture.csproj" Type="Classic C#"/>
+        <Project Path="Creational\AbstractFactory\AbstractFactory.Pizza\AbstractFactory.Pizza.csproj" Type="Classic C#"/>
+        <Project Path="Creational\AbstractFactory\AbstractFactory\AbstractFactory.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Creational/Builder/">
+        <Project Path="Creational\Builder\Builder.Building\Builder.Building.csproj" Type="Classic C#"/>
+        <Project Path="Creational\Builder\Builder.FluentAction\Builder.FluentAction.csproj" Type="Classic C#"/>
+        <Project Path="Creational\Builder\Builder.FluentSqlConnection\Builder.FluentSqlConnection.csproj" Type="Classic C#"/>
+        <Project Path="Creational\Builder\Builder.Fluent\Builder.Fluent.csproj" Type="Classic C#"/>
+        <Project Path="Creational\Builder\Builder.StaticInner\Builder.StaticInner.csproj" Type="Classic C#"/>
+        <Project Path="Creational\Builder\Builder\Builder.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Creational/FactoryMethod/">
+        <Project Path="Creational\FactoryMethod\FactoryMethod.Pizza\FactoryMethod.Pizza.csproj" Type="Classic C#"/>
+        <Project Path="Creational\FactoryMethod\FactoryMethod.Transportation\FactoryMethod.Transportation.csproj" Type="Classic C#"/>
+        <Project Path="Creational\FactoryMethod\FactoryMethod\FactoryMethod.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Creational/Prototype/">
+        <Project Path="Creational/Prototype\Prototype.Deserialize\Prototype.Deserialize.csproj" Type="Classic C#"/>
+        <Project Path="Creational\Prototype\Prototype.Cloneable\Prototype.Cloneable.csproj" Type="Classic C#"/>
+        <Project Path="Creational\Prototype\Prototype.Simple\Prototype.Simple.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Creational/Singleton/">
+        <Project Path="Creational/Singleton/Singleton.CSharpLazy\Singleton.CSharpLazy.csproj" Type="Classic C#"/>
+        <Project Path="Creational/Singleton/Singleton.Naive\Singleton.Naive.csproj" Type="Classic C#"/>
+        <Project Path="Creational/Singleton/Singleton.ThreadSafe\Singleton.ThreadSafe.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Structural/"/>
+    <Folder Name="/Structural/Adapter/">
+        <Project Path="Structural/Adapter/Adapter.Ducks\Adapter.Ducks.csproj" Type="Classic C#"/>
+        <Project Path="Structural/Adapter/Adapter.PowerOutlet\Adapter.PowerOutlet.csproj" Type="Classic C#"/>
+        <Project Path="Structural/Adapter/Adapter.SquareHole\Adapter.SquareHole.csproj" Type="Classic C#"/>
+        <Project Path="Structural/Adapter/Adapter\Adapter.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Structural/Bridge/">
+        <Project Path="Structural/Bridge/Bridge.Shapes\Bridge.Shapes.csproj" Type="Classic C#"/>
+        <Project Path="Structural/Bridge/Bridge\Bridge.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Structural/Composite/">
+        <Project Path="Structural/Composite/Composite.Boxes\Composite.Boxes.csproj" Type="Classic C#"/>
+        <Project Path="Structural/Composite/Composite\Composite.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Structural/Decorator/">
+        <Project Path="Structural/Decorator/Decorator.EncryptStream\Decorator.EncryptStream.csproj" Type="Classic C#"/>
+        <Project Path="Structural/Decorator/Decorator.LowercaseStream\Decorator.LowercaseStream.csproj" Type="Classic C#"/>
+        <Project Path="Structural/Decorator/Decorator.Starbuzz\Decorator.Starbuzz.csproj" Type="Classic C#"/>
+        <Project Path="Structural/Decorator/Decorator\Decorator.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Structural/Facade/">
+        <Project Path="Structural/Facade/Facade.HomeTheater\Facade.HomeTheater.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Structural/Flyweight/">
+        <Project Path="Structural/Flyweight/Flyweight.Bullets\Flyweight.Bullets.csproj" Type="Classic C#"/>
+    </Folder>
+    <Folder Name="/Structural/Proxy/">
+        <Project Path="Structural/Proxy/Proxy\Proxy.csproj" Type="Classic C#"/>
+    </Folder>
+</Solution>
