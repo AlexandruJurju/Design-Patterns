@@ -1,5 +1,6 @@
-﻿ParallelEnumerable.Range(0, 100)
-    .ForAll(_ =>
-    {
-        var singleton = Singleton.Naive.Singleton.Instance;
-    });
+﻿using static Singleton.Naive.Singleton;
+
+Parallel.For(0, 100, _ =>
+{
+    var singleton = Instance;
+});

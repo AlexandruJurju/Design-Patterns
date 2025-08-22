@@ -2,7 +2,7 @@
 
 // Not thread safe
 // If multiple threads try to get the instance AT THE SAME TIME they will see that it's null and create a new instance
-internal sealed class Singleton
+internal class Singleton
 {
     private static Singleton? _instance;
 
