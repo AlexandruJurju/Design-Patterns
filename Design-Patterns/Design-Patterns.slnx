@@ -72,7 +72,9 @@
     <Project Path="Creational\Prototype\Prototype.Cloneable\Prototype.Cloneable.csproj" Type="Classic C#" />
     <Project Path="Creational\Prototype\Prototype.Simple\Prototype.Simple.csproj" Type="Classic C#" />
   </Folder>
-  <Folder Name="/Creational/SimpleFactory/" />
+  <Folder Name="/Creational/SimpleFactory/">
+    <Project Path="Creational\SimpleFactory\SimpleFactory.Iluwatar.Coins\SimpleFactory.Iluwatar.Coins.csproj" Type="Classic C#" />
+  </Folder>
   <Folder Name="/Creational/Singleton/">
     <Project Path="Creational/Singleton/Singleton.CSharpLazy\Singleton.CSharpLazy.csproj" Type="Classic C#" />
     <Project Path="Creational/Singleton/Singleton.Naive\Singleton.Naive.csproj" Type="Classic C#" />
