@@ -4,7 +4,7 @@ namespace FactoryMethod.Conceptual.Creators;
 
 public abstract class Creator
 {
-    public abstract IProduct FactoryMethod();
+    protected abstract IProduct FactoryMethod();
 
     public string SomeOperation()
     {

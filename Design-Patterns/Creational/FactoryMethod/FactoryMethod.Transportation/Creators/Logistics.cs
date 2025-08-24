@@ -4,7 +4,7 @@ namespace FactoryMethod.Transportation.Creators;
 
 public abstract class Logistics
 {
-    public abstract ITransport CreateTransport();
+    protected abstract ITransport CreateTransport();
 
     public string Deliver()
     {

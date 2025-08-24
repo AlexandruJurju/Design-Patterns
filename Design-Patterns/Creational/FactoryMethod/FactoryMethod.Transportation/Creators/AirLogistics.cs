@@ -4,7 +4,7 @@ namespace FactoryMethod.Transportation.Creators;
 
 public class AirLogistics : Logistics
 {
-    public override ITransport CreateTransport()
+    protected override ITransport CreateTransport()
     {
         return new Plane();
     }
