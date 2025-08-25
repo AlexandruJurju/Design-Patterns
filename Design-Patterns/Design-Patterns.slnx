@@ -61,6 +61,9 @@
     <Project Path="Creational\Builder\Builder.Static\Builder.Static.csproj" Type="Classic C#" />
     <Project Path="Creational\Builder\Builder.WithInterfaces\Builder.WithInterfaces.csproj" Type="Classic C#" />
   </Folder>
+  <Folder Name="/Creational/FactoryKit/">
+    <Project Path="Creational\FactoryKit\FactoryKit.Weapons\FactoryKit.Weapons.csproj" Type="Classic C#" />
+  </Folder>
   <Folder Name="/Creational/FactoryMethod/">
     <Project Path="Creational\FactoryMethod\FactoryMethod.Conceptual\FactoryMethod.Conceptual.csproj" Type="Classic C#" />
     <Project Path="Creational\FactoryMethod\FactoryMethod.Iluwatar.Weapons\FactoryMethod.Iluwatar.Weapons.csproj" Type="Classic C#" />
