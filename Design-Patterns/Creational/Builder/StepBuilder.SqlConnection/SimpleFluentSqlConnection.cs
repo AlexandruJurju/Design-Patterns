@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 
-namespace Builder.WithInterfaces;
+namespace StepBuilder.SqlConnection;
 
 public class SimpleFluentSqlConnection
 {
@@ -33,9 +33,9 @@ public class SimpleFluentSqlConnection
         return this;
     }
 
-    public SqlConnection Connect()
+    public Microsoft.Data.SqlClient.SqlConnection Connect()
     {
-        var connection = new SqlConnection($"Server={_server};Database={_database};User Id={_username};Password={_password}");
+        var connection = new Microsoft.Data.SqlClient.SqlConnection($"Server={_server};Database={_database};User Id={_username};Password={_password}");
         return connection;
     }
 }

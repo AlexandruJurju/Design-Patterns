@@ -59,7 +59,6 @@
     <Project Path="Creational\Builder\Builder.Iluwatar\Builder.Iluwatar.csproj" Type="Classic C#" />
     <Project Path="Creational\Builder\Builder.StaticInner\Builder.StaticInner.csproj" Type="Classic C#" />
     <Project Path="Creational\Builder\Builder.Static\Builder.Static.csproj" Type="Classic C#" />
-    <Project Path="Creational\Builder\Builder.WithInterfaces\Builder.WithInterfaces.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Creational/FactoryKit/">
     <Project Path="Creational\FactoryKit\FactoryKit.Weapons\FactoryKit.Weapons.csproj" Type="Classic C#" />
@@ -82,6 +81,9 @@
     <Project Path="Creational/Singleton/Singleton.CSharpLazy\Singleton.CSharpLazy.csproj" Type="Classic C#" />
     <Project Path="Creational/Singleton/Singleton.Naive\Singleton.Naive.csproj" Type="Classic C#" />
     <Project Path="Creational/Singleton/Singleton.ThreadSafe\Singleton.ThreadSafe.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/Creational/StepBuilder/">
+    <Project Path="Creational\Builder\StepBuilder.SqlConnection\StepBuilder.SqlConnection.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/" />
   <Folder Name="/Structural/Adapter/">
