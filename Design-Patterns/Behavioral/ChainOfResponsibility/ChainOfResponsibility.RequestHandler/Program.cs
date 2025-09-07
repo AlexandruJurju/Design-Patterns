@@ -1,12 +1,10 @@
 ﻿using ChainOfResponsibility.RequestHandler;
 
 var authenticationHandler = new AuthenticationHandler();
-var authorizationHandler = new AuthorizationHandler();
-var validationHandler = new ValidationHandler();
 
 authenticationHandler
-    .SetNextHandler(authorizationHandler)
-    .SetNextHandler(validationHandler);
+    .SetNextHandler(new AuthorizationHandler())
+    .SetNextHandler(new ValidationHandler());
 
 var validRequest = new Request { Content = "JWT | ADMIN" };
 var invalidTokenRequest = new Request { Content = "INVALID_TOKEN | ADMIN" };

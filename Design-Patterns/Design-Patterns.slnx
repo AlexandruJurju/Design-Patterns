@@ -4,6 +4,7 @@
     <Project Path="Behavioral/ChainOfResponsibility/ChainOfResponsibility.Authentication\ChainOfResponsibility.Authentication.csproj" Type="Classic C#" />
     <Project Path="Behavioral/ChainOfResponsibility/ChainOfResponsibility.RequestHandler\ChainOfResponsibility.RequestHandler.csproj" Type="Classic C#" />
     <Project Path="Behavioral\ChainOfResponsibility\ChainOfResponsibility.Conceptual\ChainOfResponsibility.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Behavioral\ChainOfResponsibility\ChainOfResponsibility.Iluwatar.OrcKing\ChainOfResponsibility.Iluwatar.OrcKing.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Behavioral/Command/">
     <Project Path="Behavioral/Command/Command.Remote\Command.Remote.csproj" Type="Classic C#" />
