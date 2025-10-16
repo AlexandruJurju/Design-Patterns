@@ -16,10 +16,7 @@ public abstract class Pizza
         Console.WriteLine("Tossing dough...");
         Console.WriteLine("Adding sauce...");
         Console.WriteLine("Adding toppings: ");
-        foreach (var topping in Toppings)
-        {
-            Console.WriteLine("   " + topping);
-        }
+        foreach (var topping in Toppings) Console.WriteLine("   " + topping);
     }
 
     public virtual void Bake()
@@ -44,10 +41,7 @@ public abstract class Pizza
         result.AppendLine("---- " + Name + " ----");
         result.AppendLine(Dough);
         result.AppendLine(Sauce);
-        foreach (var topping in Toppings)
-        {
-            result.AppendLine(topping);
-        }
+        foreach (var topping in Toppings) result.AppendLine(topping);
 
         return result.ToString();
     }

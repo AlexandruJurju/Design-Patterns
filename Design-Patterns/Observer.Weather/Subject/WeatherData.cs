@@ -22,10 +22,7 @@ public class WeatherData : ISubject
 
     public void NotifyObservers()
     {
-        foreach (var observer in observers)
-        {
-            observer.Update(Temperature, Humidity, Pressure);
-        }
+        foreach (var observer in observers) observer.Update(Temperature, Humidity, Pressure);
     }
 
     public void MeasurementsChanged()

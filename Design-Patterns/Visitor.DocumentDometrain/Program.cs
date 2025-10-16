@@ -12,15 +12,9 @@ var elements = new List<IDocumentElement>
 Console.WriteLine("Text format: WORD");
 var textDocumentVisitor = new TextDocumentVisitor();
 
-foreach (var element in elements)
-{
-    element.Accept(textDocumentVisitor);
-}
+foreach (var element in elements) element.Accept(textDocumentVisitor);
 
 Console.WriteLine("Text format: MARKDOWN");
 var markdownDocumentVisitor = new MarkdownDocumentVisitor();
 
-foreach (var element in elements)
-{
-    element.Accept(markdownDocumentVisitor);
-}
+foreach (var element in elements) element.Accept(markdownDocumentVisitor);

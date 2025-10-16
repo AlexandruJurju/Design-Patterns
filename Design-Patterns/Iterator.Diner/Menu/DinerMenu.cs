@@ -30,13 +30,9 @@ public class DinerMenu : IMenu
     {
         var menuItem = new MenuItem(name, description, vegetarian, price);
         if (_numberOfItems >= MAX_ITEMS)
-        {
             Console.WriteLine("Sorry, menu is full!  Can't add item to menu");
-        }
         else
-        {
             _menuItems[_numberOfItems++] = menuItem;
-        }
     }
 
     public MenuItem[] GetMenuItems()

@@ -22,12 +22,8 @@ static void ClientCode(AbstractHandler handler)
         var result = handler.Handle(food);
 
         if (result != null)
-        {
             Console.Write($"   {result}");
-        }
         else
-        {
             Console.WriteLine($"   {food} was left untouched.");
-        }
     }
 }

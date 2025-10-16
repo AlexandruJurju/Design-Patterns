@@ -3,4 +3,4 @@ using FactoryMethod.Dometrain.Conceptual.Products;
 
 Creator creator = new ConcreteCreator();
 
-IProduct concreteProduct = creator.CreateProduct();
+var concreteProduct = creator.CreateProduct();

@@ -8,10 +8,7 @@ public class BookCollectionEnumerable : IEnumerable<string>
 
     public IEnumerator<string> GetEnumerator()
     {
-        foreach (var title in _titles)
-        {
-            yield return title;
-        }
+        foreach (var title in _titles) yield return title;
     }
 
     IEnumerator IEnumerable.GetEnumerator()

@@ -32,10 +32,7 @@ public class LowerCaseStream : Stream
         var bytesRead = _baseStream.Read(buffer, offset, count);
 
         // Convert the read bytes to lowercase
-        for (var i = offset; i < offset + bytesRead; i++)
-        {
-            buffer[i] = (byte)char.ToLower((char)buffer[i]);
-        }
+        for (var i = offset; i < offset + bytesRead; i++) buffer[i] = (byte)char.ToLower((char)buffer[i]);
 
         return bytesRead;
     }

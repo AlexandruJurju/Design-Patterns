@@ -16,17 +16,10 @@ public class ForecastDisplay : IObserver, IDisplayElement
     {
         Console.Write("Forecast: ");
         if (_currentPressure > _lastPressure)
-        {
             Console.WriteLine("Improving weather on the way!");
-        }
         else if (_currentPressure == _lastPressure)
-        {
             Console.WriteLine("More of the same");
-        }
-        else if (_currentPressure < _lastPressure)
-        {
-            Console.WriteLine("Watch out for cooler, rainy weather");
-        }
+        else if (_currentPressure < _lastPressure) Console.WriteLine("Watch out for cooler, rainy weather");
     }
 
     public void Update(double temp, double humidity, double pressure)

@@ -33,7 +33,4 @@ Console.WriteLine($"Total bullet objects: {bullets.Count}");
 Console.WriteLine($"Total bullet types: {factory.GetBulletTypesCount()}");
 
 // Render first few bullets to demonstrate
-foreach (var t in bullets)
-{
-    t.Render();
-}
+foreach (var t in bullets) t.Render();

@@ -17,10 +17,7 @@ public class ConcreteSubject : ISubject
 
     public void Notify()
     {
-        foreach (var observer in _observers)
-        {
-            observer.Update(State);
-        }
+        foreach (var observer in _observers) observer.Update(State);
     }
 
     public void ChangeState()

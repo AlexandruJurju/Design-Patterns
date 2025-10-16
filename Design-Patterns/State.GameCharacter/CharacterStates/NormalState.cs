@@ -6,10 +6,7 @@ public class NormalState : ICharacterState
     {
         character.ModifyHealth(-damage);
 
-        if (character.Health < 30)
-        {
-            character.SetState(new InjuredState());
-        }
+        if (character.Health < 30) character.SetState(new InjuredState());
     }
 
     public void HandlePowerUpCollection(Character character)

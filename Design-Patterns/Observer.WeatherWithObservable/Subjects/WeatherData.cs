@@ -23,10 +23,7 @@ public class WeatherData : IObservable<WeatherData>
 
     private void MeasurementsChanged()
     {
-        foreach (var observer in _observers)
-        {
-            observer.OnNext(this);
-        }
+        foreach (var observer in _observers) observer.OnNext(this);
     }
 
     public void SetMeasurements(double temperature, double humidity, double pressure)

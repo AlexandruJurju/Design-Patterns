@@ -12,10 +12,7 @@ public class AbstractHandler : IHandler
 
     public virtual object? Handle(object request)
     {
-        if (_nextHandler is not null)
-        {
-            return _nextHandler.Handle(request);
-        }
+        if (_nextHandler is not null) return _nextHandler.Handle(request);
 
         return null;
     }

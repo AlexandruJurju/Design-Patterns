@@ -13,10 +13,7 @@ public class Box(string name) : Item(name)
     {
         decimal totalPrice = 0;
 
-        foreach (var item in _items)
-        {
-            totalPrice += item.GetPrice();
-        }
+        foreach (var item in _items) totalPrice += item.GetPrice();
 
         return totalPrice;
     }

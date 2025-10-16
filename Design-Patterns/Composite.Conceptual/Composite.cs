@@ -27,10 +27,7 @@ public class Composite : Component
         foreach (var component in _children)
         {
             result += component.Operation();
-            if (i != _children.Count - 1)
-            {
-                result += "+";
-            }
+            if (i != _children.Count - 1) result += "+";
 
             i++;
         }

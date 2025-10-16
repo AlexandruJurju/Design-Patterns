@@ -17,7 +17,6 @@ public class EncryptCloudStream(CloudStream decoratedStream) : Decorator(decorat
         var random = new Random();
 
         foreach (var character in data)
-        {
             switch (random.Next(0, 4))
             {
                 case 0:
@@ -33,7 +32,6 @@ public class EncryptCloudStream(CloudStream decoratedStream) : Decorator(decorat
                     stringBuilder.Append("%");
                     break;
             }
-        }
 
         return stringBuilder.ToString();
     }

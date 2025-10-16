@@ -38,15 +38,9 @@ public abstract class FileParser
 
     private void ValidateFile(string filePath)
     {
-        if (!File.Exists(filePath))
-        {
-            throw new FileNotFoundException("File not found", filePath);
-        }
+        if (!File.Exists(filePath)) throw new FileNotFoundException("File not found", filePath);
 
-        if (new FileInfo(filePath).Length == 0)
-        {
-            throw new Exception("File is empty");
-        }
+        if (new FileInfo(filePath).Length == 0) throw new Exception("File is empty");
     }
 
     protected virtual void LogOperation(string message)

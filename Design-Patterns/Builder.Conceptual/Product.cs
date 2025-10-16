@@ -13,10 +13,7 @@ public class Product
     {
         var str = string.Empty;
 
-        for (var i = 0; i < _parts.Count; i++)
-        {
-            str += _parts[i] + ", ";
-        }
+        for (var i = 0; i < _parts.Count; i++) str += _parts[i] + ", ";
 
         str = str.Remove(str.Length - 2); // removing last ",c"
 

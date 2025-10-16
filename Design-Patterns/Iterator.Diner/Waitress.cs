@@ -60,10 +60,7 @@ public class Waitress
         while (iterator.HasNext())
         {
             var menuItem = iterator.Next();
-            if (menuItem.Name == name && menuItem.IsVegetarian)
-            {
-                return true;
-            }
+            if (menuItem.Name == name && menuItem.IsVegetarian) return true;
         }
 
         return false;

@@ -18,10 +18,7 @@ public abstract class Decorator : Component
 
     public override string Operation()
     {
-        if (_component != null)
-        {
-            return _component.Operation();
-        }
+        if (_component != null) return _component.Operation();
 
         return string.Empty;
     }

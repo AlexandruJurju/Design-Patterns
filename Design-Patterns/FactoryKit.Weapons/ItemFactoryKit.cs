@@ -14,10 +14,7 @@ public class ItemFactoryKit
 
     public BaseWeapon CreateItem(string itemType)
     {
-        if (_factories.TryGetValue(itemType, out var factory))
-        {
-            return factory();
-        }
+        if (_factories.TryGetValue(itemType, out var factory)) return factory();
 
         throw new ArgumentException($"Unknown item type: {itemType}");
     }

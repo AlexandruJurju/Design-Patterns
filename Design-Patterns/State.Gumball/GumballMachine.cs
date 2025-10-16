@@ -45,10 +45,7 @@ public class GumballMachine
     public void ReleaseBall()
     {
         Console.WriteLine("A gumball comes rolling out the slot...");
-        if (Count != 0)
-        {
-            Count--;
-        }
+        if (Count != 0) Count--;
     }
 
     public void Refill(int count)
@@ -70,10 +67,7 @@ public class GumballMachine
         result.Append("\nMighty Gumball, Inc.");
         result.Append("\nC#-enabled Standing Gumball Model #2016");
         result.Append("\nInventory: " + Count + " gumball");
-        if (Count != 1)
-        {
-            result.Append("s");
-        }
+        if (Count != 1) result.Append("s");
 
         result.Append("\n");
         result.Append("Machine is " + State + "\n");

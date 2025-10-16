@@ -17,9 +17,6 @@ public class InjuredState : ICharacterState
     {
         character.ModifyHealth(2);
 
-        if (character.Health >= 30)
-        {
-            character.SetState(new NormalState());
-        }
+        if (character.Health >= 30) character.SetState(new NormalState());
     }
 }

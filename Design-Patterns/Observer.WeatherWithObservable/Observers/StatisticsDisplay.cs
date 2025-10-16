@@ -36,15 +36,9 @@ public class StatisticsDisplay : IObserver<WeatherData>, IDisplayElement
         _tempSum += value.Temperature;
         _numReadings++;
 
-        if (value.Temperature > _maxTemp)
-        {
-            _maxTemp = value.Temperature;
-        }
+        if (value.Temperature > _maxTemp) _maxTemp = value.Temperature;
 
-        if (value.Temperature < _minTemp)
-        {
-            _minTemp = value.Temperature;
-        }
+        if (value.Temperature < _minTemp) _minTemp = value.Temperature;
 
         Display();
     }

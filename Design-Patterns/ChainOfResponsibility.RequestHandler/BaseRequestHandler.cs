@@ -14,10 +14,7 @@ public abstract class BaseRequestHandler : IRequestHandler
     {
         ProcessRequest(request);
 
-        if (request.IsValid && _nextHandler != null)
-        {
-            _nextHandler.HandleRequest(request);
-        }
+        if (request.IsValid && _nextHandler != null) _nextHandler.HandleRequest(request);
     }
 
     protected abstract void ProcessRequest(Request request);

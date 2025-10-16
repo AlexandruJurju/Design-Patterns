@@ -14,10 +14,7 @@ public abstract class BaseHandler : IHandler
 
     protected bool HandleNext(User user)
     {
-        if (_next is null)
-        {
-            return true;
-        }
+        if (_next is null) return true;
 
         return _next.Handle(user);
     }

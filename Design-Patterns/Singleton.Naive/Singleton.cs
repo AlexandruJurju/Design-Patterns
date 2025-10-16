@@ -15,10 +15,7 @@ internal class Singleton
     {
         get
         {
-            if (_instance is null)
-            {
-                _instance = new Singleton();
-            }
+            if (_instance is null) _instance = new Singleton();
 
             return _instance;
         }

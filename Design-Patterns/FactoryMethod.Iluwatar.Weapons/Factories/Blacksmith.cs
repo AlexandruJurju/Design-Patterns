@@ -9,7 +9,7 @@ public abstract class Blacksmith
     public Weapon CraftWeapon(WeaponType weaponType)
     {
         Console.WriteLine($"Blacksmith is crafting a {weaponType}...");
-        Weapon weapon = CreateWeapon(weaponType);
+        var weapon = CreateWeapon(weaponType);
         Console.WriteLine($"Crafted: {weapon.Name}");
         return weapon;
     }

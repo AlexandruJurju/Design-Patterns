@@ -11,9 +11,6 @@ public class ChatMediator : IMediator
 
     public void SendMessage(string message, int chatId)
     {
-        foreach (var user in _users.Where(x => x.Key != chatId))
-        {
-            user.Value.ReceiveMessage(message);
-        }
+        foreach (var user in _users.Where(x => x.Key != chatId)) user.Value.ReceiveMessage(message);
     }
 }

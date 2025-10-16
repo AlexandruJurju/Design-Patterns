@@ -18,17 +18,11 @@ internal class Invoker
     public void DoSomethingImportant()
     {
         Console.WriteLine("Invoker: Does anybody want something done before I begin?");
-        if (_onStart != null)
-        {
-            _onStart.Execute();
-        }
+        if (_onStart != null) _onStart.Execute();
 
         Console.WriteLine("Invoker: ...doing something really important...");
 
         Console.WriteLine("Invoker: Does anybody want something done after I finish?");
-        if (_onFinish != null)
-        {
-            _onFinish.Execute();
-        }
+        if (_onFinish != null) _onFinish.Execute();
     }
 }
