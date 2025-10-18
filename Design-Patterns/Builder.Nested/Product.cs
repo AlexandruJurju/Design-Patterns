@@ -1,4 +1,4 @@
-﻿namespace Builder.StaticInner;
+﻿namespace Builder.Nested;
 
 public class Product
 {

@@ -1,4 +1,4 @@
-﻿using Builder.StaticInner;
+﻿using Builder.Nested;
 
 var product = new Product.Builder()
     .AddPartA()

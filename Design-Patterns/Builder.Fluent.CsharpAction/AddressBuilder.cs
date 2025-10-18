@@ -1,4 +1,4 @@
-﻿namespace Builder.CsharpAction;
+﻿namespace Builder.Fluent.CsharpAction;
 
 public class AddressBuilder
 {
