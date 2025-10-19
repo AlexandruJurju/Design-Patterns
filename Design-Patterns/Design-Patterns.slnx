@@ -126,6 +126,8 @@
     <Project Path="Decorator.EncryptStream\Decorator.EncryptStream.csproj" Type="Classic C#" />
     <Project Path="Decorator.LowercaseStream\Decorator.LowercaseStream.csproj" Type="Classic C#" />
     <Project Path="Decorator.Starbuzz\Decorator.Starbuzz.csproj" Type="Classic C#" />
+    <Project Path="Structural\Decorator.Dometrain.Conceptual\Decorator.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Structural\Decorator.Dometrain.Tesla\Decorator.Dometrain.Tesla.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Facade/">
     <Project Path="Facade.HomeTheater\Facade.HomeTheater.csproj" Type="Classic C#" />
