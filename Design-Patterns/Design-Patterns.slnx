@@ -118,6 +118,8 @@
   <Folder Name="/Structural/Composite/">
     <Project Path="Composite.Boxes\Composite.Boxes.csproj" Type="Classic C#" />
     <Project Path="Composite.Conceptual\Composite.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Structural\Composite.Dometrain.Conceptual\Composite.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Structural\Composite.Dometrain.LearningResource\Composite.Dometrain.LearningResource.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Decorator/">
     <Project Path="Decorator.Conceptual\Decorator.Conceptual.csproj" Type="Classic C#" />
