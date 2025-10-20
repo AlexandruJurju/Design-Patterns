@@ -110,6 +110,8 @@
     <Project Path="Adapter.Ducks\Adapter.Ducks.csproj" Type="Classic C#" />
     <Project Path="Adapter.PowerOutlet\Adapter.PowerOutlet.csproj" Type="Classic C#" />
     <Project Path="Adapter.SquareHole\Adapter.SquareHole.csproj" Type="Classic C#" />
+    <Project Path="Structural\Adapter.Dometrain.Conceptual\Adapter.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Structural\Adapter.Dometrain.GameEngine\Adapter.Dometrain.GameEngine.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Bridge/">
     <Project Path="Bridge.Conceptual\Bridge.Conceptual.csproj" Type="Classic C#" />
