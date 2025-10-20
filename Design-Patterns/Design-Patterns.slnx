@@ -131,6 +131,8 @@
   </Folder>
   <Folder Name="/Structural/Facade/">
     <Project Path="Facade.HomeTheater\Facade.HomeTheater.csproj" Type="Classic C#" />
+    <Project Path="Structural\Facade.Dometrain.Casting\Facade.Dometrain.Casting.csproj" Type="Classic C#" />
+    <Project Path="Structural\Facade.Dometrain.Conceptual\Facade.Dometrain.Conceptual.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Flyweight/">
     <Project Path="Flyweight.Bullets\Flyweight.Bullets.csproj" Type="Classic C#" />
