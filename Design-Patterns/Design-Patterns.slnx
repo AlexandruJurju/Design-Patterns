@@ -21,6 +21,8 @@
     <Project Path="Memento.TextEditor\Memento.TextEditor.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Behavioral/Observer/">
+    <Project Path="Behavioral\Observer.Dometrain.Conceptual\Observer.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Behavioral\Observer.Dometrain.Game\Observer.Dometrain.Game.csproj" Type="Classic C#" />
     <Project Path="Observer.Conceptual\Observer.Conceptual.csproj" Type="Classic C#" />
     <Project Path="Observer.PrintingOfficeDelegate\Observer.PrintingOfficeDelegate.csproj" Type="Classic C#" />
     <Project Path="Observer.PrintingOfficeEvent\Observer.PrintingOfficeEvent.csproj" Type="Classic C#" />
@@ -116,6 +118,8 @@
   <Folder Name="/Structural/Bridge/">
     <Project Path="Bridge.Conceptual\Bridge.Conceptual.csproj" Type="Classic C#" />
     <Project Path="Bridge.Shapes\Bridge.Shapes.csproj" Type="Classic C#" />
+    <Project Path="Structural\Bridge.Dometrain.Clothing\Bridge.Dometrain.Clothing.csproj" Type="Classic C#" />
+    <Project Path="Structural\Bridge.Dometrain.Conceputal\Bridge.Dometrain.Conceputal.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Composite/">
     <Project Path="Composite.Boxes\Composite.Boxes.csproj" Type="Classic C#" />
@@ -138,8 +142,12 @@
   </Folder>
   <Folder Name="/Structural/Flyweight/">
     <Project Path="Flyweight.Bullets\Flyweight.Bullets.csproj" Type="Classic C#" />
+    <Project Path="Structural\Flyweight.Dometrain.Conceptual\Flyweight.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Structural\Flyweight.Dometrain.Document\Flyweight.Dometrain.Document.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Proxy/">
     <Project Path="Proxy.Conceptual\Proxy.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Structural\Proxy.Dometrain.Conceptual\Proxy.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Structural\Proxy.Dometrain.Image\Proxy.Dometrain.Image.csproj" Type="Classic C#" />
   </Folder>
 </Solution>
