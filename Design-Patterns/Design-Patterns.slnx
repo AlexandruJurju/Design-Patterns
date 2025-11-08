@@ -1,14 +1,15 @@
 ﻿<Solution>
   <Folder Name="/Behavioral/" />
   <Folder Name="/Behavioral/ChainOfResponsibility/">
-    <Project Path="Behavioral\ChainOfResponsibility.Dometrain.Conceptual\ChainOfResponsibility.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Behavioral\ChainOfResponsibility.Dometrain.EmailSpamDetection\ChainOfResponsibility.Dometrain.EmailSpamDetection.csproj" Type="Classic C#" />
+    <Project Path="ChainOfResponsibility.Dometrain.Conceptual\ChainOfResponsibility.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="ChainOfResponsibility.Dometrain.EmailSpamDetection\ChainOfResponsibility.Dometrain.EmailSpamDetection.csproj" Type="Classic C#" />
     <Project Path="ChainOfResponsibility.Authentication\ChainOfResponsibility.Authentication.csproj" Type="Classic C#" />
     <Project Path="ChainOfResponsibility.Conceptual\ChainOfResponsibility.Conceptual.csproj" Type="Classic C#" />
     <Project Path="ChainOfResponsibility.Iluwatar.OrcKing\ChainOfResponsibility.Iluwatar.OrcKing.csproj" Type="Classic C#" />
     <Project Path="ChainOfResponsibility.RequestHandler\ChainOfResponsibility.RequestHandler.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Behavioral/Command/">
+    <Project Path="Command.Dometrain.Conceptual\Command.Dometrain.Conceptual.csproj" Type="Classic C#" />
     <Project Path="Command.Conceptual\Command.Conceptual.csproj" Type="Classic C#" />
     <Project Path="Command.Remote\Command.Remote.csproj" Type="Classic C#" />
   </Folder>
@@ -20,13 +21,13 @@
     <Project Path="Mediator.UserChat\Mediator.UserChat.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Behavioral/Memento/">
-    <Project Path="Behavioral\Memento.Dometrain.Conceptual\Memento.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Behavioral\Memento.Dometrain.TextBox\Memento.Dometrain.TextBox.csproj" Type="Classic C#" />
+    <Project Path="Memento.Dometrain.Conceptual\Memento.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Memento.Dometrain.TextBox\Memento.Dometrain.TextBox.csproj" Type="Classic C#" />
     <Project Path="Memento.TextEditor\Memento.TextEditor.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Behavioral/Observer/">
-    <Project Path="Behavioral\Observer.Dometrain.Conceptual\Observer.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Behavioral\Observer.Dometrain.Game\Observer.Dometrain.Game.csproj" Type="Classic C#" />
+    <Project Path="Observer.Dometrain.Conceptual\Observer.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Observer.Dometrain.Game\Observer.Dometrain.Game.csproj" Type="Classic C#" />
     <Project Path="Observer.Conceptual\Observer.Conceptual.csproj" Type="Classic C#" />
     <Project Path="Observer.PrintingOfficeDelegate\Observer.PrintingOfficeDelegate.csproj" Type="Classic C#" />
     <Project Path="Observer.PrintingOfficeEvent\Observer.PrintingOfficeEvent.csproj" Type="Classic C#" />
@@ -59,27 +60,27 @@
     <Project Path="AbstractFactory.HeadFirst.Pizza\AbstractFactory.HeadFirst.Pizza.csproj" Type="Classic C#" />
     <Project Path="AbstractFactory.Iluwatar.Kingdoms\AbstractFactory.Iluwatar.Kingdoms.csproj" Type="Classic C#" />
     <Project Path="AbstractFactory.RefactoringGuru.Furniture\AbstractFactory.RefactoringGuru.Furniture.csproj" Type="Classic C#" />
-    <Project Path="Creational\AbstractFactory.Dometrain.Conceptual\AbstractFactory.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Creational\AbstractFactory.Dometrain.Quest\AbstractFactory.Dometrain.Quest.csproj" Type="Classic C#" />
+    <Project Path="AbstractFactory.Dometrain.Conceptual\AbstractFactory.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="AbstractFactory.Dometrain.Quest\AbstractFactory.Dometrain.Quest.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Creational/Builder/">
     <Project Path="Builder.Conceptual\Builder.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Creational\Builder.Dometrain.Classic.Conceptual\Builder.Dometrain.Classic.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Creational\Builder.Dometrain.Conceptual\Builder.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Builder.Dometrain.Classic.Conceptual\Builder.Dometrain.Classic.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Builder.Dometrain.Conceptual\Builder.Dometrain.Conceptual.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Creational/Builder/Fluent/">
     <Project Path="Builder.Fluent.CsharpAction\Builder.Fluent.CsharpAction.csproj" Type="Classic C#" />
-    <Project Path="Creational\Builder.Dometrain.Fluent.Conceptual\Builder.Dometrain.Fluent.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Builder.Dometrain.Fluent.Conceptual\Builder.Dometrain.Fluent.Conceptual.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Creational/Builder/Inner/">
-    <Project Path="Creational\Builder.Dometrain.Inner.Pizza\Builder.Dometrain.Inner.Pizza.csproj" Type="Classic C#" />
+    <Project Path="Builder.Dometrain.Inner.Pizza\Builder.Dometrain.Inner.Pizza.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Creational/Builder/Nested/">
     <Project Path="Builder.Nested\Builder.Nested.csproj" Type="Classic C#" />
-    <Project Path="Creational\Builder.Dometrain.Nested.Conceptual\Builder.Dometrain.Nested.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Builder.Dometrain.Nested.Conceptual\Builder.Dometrain.Nested.Conceptual.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Creational/Builder/Step/">
-    <Project Path="Creational\Builder.Dometrain.Step.Pizza\Builder.Dometrain.Step.Pizza.csproj" Type="Classic C#" />
+    <Project Path="Builder.Dometrain.Step.Pizza\Builder.Dometrain.Step.Pizza.csproj" Type="Classic C#" />
     <Project Path="StepBuilder.SqlConnection\StepBuilder.SqlConnection.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Creational/Factory/" />
@@ -87,7 +88,7 @@
     <Project Path="FactoryKit.Weapons\FactoryKit.Weapons.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Creational/Factory/FactoryMethod/">
-    <Project Path="Creational\FactoryMethod.Dometrain.Quest\FactoryMethod.Dometrain.Quest.csproj" Type="Classic C#" />
+    <Project Path="FactoryMethod.Dometrain.Quest\FactoryMethod.Dometrain.Quest.csproj" Type="Classic C#" />
     <Project Path="FactoryMethod.Conceptual\FactoryMethod.Conceptual.csproj" Type="Classic C#" />
     <Project Path="FactoryMethod.Dometrain.Conceptual\FactoryMethod.Dometrain.Conceptual.csproj" Type="Classic C#" />
     <Project Path="FactoryMethod.HeadFirst.Pizza\FactoryMethod.HeadFirst.Pizza.csproj" Type="Classic C#" />
@@ -99,8 +100,8 @@
     <Project Path="SimpleFactory.Iluwatar.Coins\SimpleFactory.Iluwatar.Coins.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Creational/Prototype/">
-    <Project Path="Creational\Prototype.Dometrain.Conceptual\Prototype.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Creational\Prototype.Dometrain.Shapes\Prototype.Dometrain.Shapes.csproj" Type="Classic C#" />
+    <Project Path="Prototype.Dometrain.Conceptual\Prototype.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Prototype.Dometrain.Shapes\Prototype.Dometrain.Shapes.csproj" Type="Classic C#" />
     <Project Path="Prototype.Cloneable\Prototype.Cloneable.csproj" Type="Classic C#" />
     <Project Path="Prototype.Deserialize\Prototype.Deserialize.csproj" Type="Classic C#" />
     <Project Path="Prototype.Simple\Prototype.Simple.csproj" Type="Classic C#" />
@@ -116,42 +117,42 @@
     <Project Path="Adapter.Ducks\Adapter.Ducks.csproj" Type="Classic C#" />
     <Project Path="Adapter.PowerOutlet\Adapter.PowerOutlet.csproj" Type="Classic C#" />
     <Project Path="Adapter.SquareHole\Adapter.SquareHole.csproj" Type="Classic C#" />
-    <Project Path="Structural\Adapter.Dometrain.Conceptual\Adapter.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Structural\Adapter.Dometrain.GameEngine\Adapter.Dometrain.GameEngine.csproj" Type="Classic C#" />
+    <Project Path="Adapter.Dometrain.Conceptual\Adapter.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Adapter.Dometrain.GameEngine\Adapter.Dometrain.GameEngine.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Bridge/">
     <Project Path="Bridge.Conceptual\Bridge.Conceptual.csproj" Type="Classic C#" />
     <Project Path="Bridge.Shapes\Bridge.Shapes.csproj" Type="Classic C#" />
-    <Project Path="Structural\Bridge.Dometrain.Clothing\Bridge.Dometrain.Clothing.csproj" Type="Classic C#" />
-    <Project Path="Structural\Bridge.Dometrain.Conceputal\Bridge.Dometrain.Conceputal.csproj" Type="Classic C#" />
+    <Project Path="Bridge.Dometrain.Clothing\Bridge.Dometrain.Clothing.csproj" Type="Classic C#" />
+    <Project Path="Bridge.Dometrain.Conceputal\Bridge.Dometrain.Conceputal.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Composite/">
     <Project Path="Composite.Boxes\Composite.Boxes.csproj" Type="Classic C#" />
     <Project Path="Composite.Conceptual\Composite.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Structural\Composite.Dometrain.Conceptual\Composite.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Structural\Composite.Dometrain.LearningResource\Composite.Dometrain.LearningResource.csproj" Type="Classic C#" />
+    <Project Path="Composite.Dometrain.Conceptual\Composite.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Composite.Dometrain.LearningResource\Composite.Dometrain.LearningResource.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Decorator/">
     <Project Path="Decorator.Conceptual\Decorator.Conceptual.csproj" Type="Classic C#" />
     <Project Path="Decorator.EncryptStream\Decorator.EncryptStream.csproj" Type="Classic C#" />
     <Project Path="Decorator.LowercaseStream\Decorator.LowercaseStream.csproj" Type="Classic C#" />
     <Project Path="Decorator.Starbuzz\Decorator.Starbuzz.csproj" Type="Classic C#" />
-    <Project Path="Structural\Decorator.Dometrain.Conceptual\Decorator.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Structural\Decorator.Dometrain.Tesla\Decorator.Dometrain.Tesla.csproj" Type="Classic C#" />
+    <Project Path="Decorator.Dometrain.Conceptual\Decorator.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Decorator.Dometrain.Tesla\Decorator.Dometrain.Tesla.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Facade/">
     <Project Path="Facade.HomeTheater\Facade.HomeTheater.csproj" Type="Classic C#" />
-    <Project Path="Structural\Facade.Dometrain.Casting\Facade.Dometrain.Casting.csproj" Type="Classic C#" />
-    <Project Path="Structural\Facade.Dometrain.Conceptual\Facade.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Facade.Dometrain.Casting\Facade.Dometrain.Casting.csproj" Type="Classic C#" />
+    <Project Path="Facade.Dometrain.Conceptual\Facade.Dometrain.Conceptual.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Flyweight/">
     <Project Path="Flyweight.Bullets\Flyweight.Bullets.csproj" Type="Classic C#" />
-    <Project Path="Structural\Flyweight.Dometrain.Conceptual\Flyweight.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Structural\Flyweight.Dometrain.Document\Flyweight.Dometrain.Document.csproj" Type="Classic C#" />
+    <Project Path="Flyweight.Dometrain.Conceptual\Flyweight.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Flyweight.Dometrain.Document\Flyweight.Dometrain.Document.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Structural/Proxy/">
     <Project Path="Proxy.Conceptual\Proxy.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Structural\Proxy.Dometrain.Conceptual\Proxy.Dometrain.Conceptual.csproj" Type="Classic C#" />
-    <Project Path="Structural\Proxy.Dometrain.Image\Proxy.Dometrain.Image.csproj" Type="Classic C#" />
+    <Project Path="Proxy.Dometrain.Conceptual\Proxy.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Proxy.Dometrain.Image\Proxy.Dometrain.Image.csproj" Type="Classic C#" />
   </Folder>
 </Solution>
