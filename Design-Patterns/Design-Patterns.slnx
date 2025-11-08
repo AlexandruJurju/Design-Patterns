@@ -1,6 +1,8 @@
 ﻿<Solution>
   <Folder Name="/Behavioral/" />
   <Folder Name="/Behavioral/ChainOfResponsibility/">
+    <Project Path="Behavioral\ChainOfResponsibility.Dometrain.Conceptual\ChainOfResponsibility.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Behavioral\ChainOfResponsibility.Dometrain.EmailSpamDetection\ChainOfResponsibility.Dometrain.EmailSpamDetection.csproj" Type="Classic C#" />
     <Project Path="ChainOfResponsibility.Authentication\ChainOfResponsibility.Authentication.csproj" Type="Classic C#" />
     <Project Path="ChainOfResponsibility.Conceptual\ChainOfResponsibility.Conceptual.csproj" Type="Classic C#" />
     <Project Path="ChainOfResponsibility.Iluwatar.OrcKing\ChainOfResponsibility.Iluwatar.OrcKing.csproj" Type="Classic C#" />
@@ -18,6 +20,8 @@
     <Project Path="Mediator.UserChat\Mediator.UserChat.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Behavioral/Memento/">
+    <Project Path="Behavioral\Memento.Dometrain.Conceptual\Memento.Dometrain.Conceptual.csproj" Type="Classic C#" />
+    <Project Path="Behavioral\Memento.Dometrain.TextBox\Memento.Dometrain.TextBox.csproj" Type="Classic C#" />
     <Project Path="Memento.TextEditor\Memento.TextEditor.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Behavioral/Observer/">
